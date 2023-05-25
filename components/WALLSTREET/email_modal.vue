@@ -114,39 +114,39 @@
         
     
     
-    fetch(`${config.flask_url}/api/user_dashboard/update_email_and_pass/`, {
-          method: 'post',
-          mode: 'cors',
-          credentials: 'include',
-          headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json',
-              'X-CSRF-TOKEN': csrf_cookie.value
-          },
-          body: JSON.stringify({email_or_password: email_or_password.value.toLowerCase(), password:pass_1.value, email:email_1.value})
-      })
-      .then((response) => response.json())
-      .then((data) => {
-           notification_count.value = data.notification_count;
+    // fetch(`${config.flask_url}/api/user_dashboard/update_email_and_pass/`, {
+    //       method: 'post',
+    //       mode: 'cors',
+    //       credentials: 'include',
+    //       headers: {
+    //           'Accept': 'application/json',
+    //           'Content-Type': 'application/json',
+    //           'X-CSRF-TOKEN': csrf_cookie.value
+    //       },
+    //       body: JSON.stringify({email_or_password: email_or_password.value.toLowerCase(), password:pass_1.value, email:email_1.value})
+    //   })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //        notification_count.value = data.notification_count;
     
-           alert(data.msg)
-           if (data.status == 'email_or_password_updated'){
-            notification_count.value = data.notification_count;
-            modal_leave()
-           } 
+    //        alert(data.msg)
+    //        if (data.status == 'email_or_password_updated'){
+    //         notification_count.value = data.notification_count;
+    //         modal_leave()
+    //        } 
     
-      })
-      .catch(error => {
-          //  alert("Error")
-          console.error('There was an error!', error);
-        //   navigateTo('/login_pages/login')
-      });
+    //   })
+    //   .catch(error => {
+    //       //  alert("Error")
+    //       console.error('There was an error!', error);
+    //     //   navigateTo('/login_pages/login')
+    //   });
     
-        }
-    
-    
+    //     }
     
     
+    
+    }
     
     
     

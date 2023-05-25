@@ -1,0 +1,60 @@
+.rcx-content--main {
+    --rcx-color-surface-room: rgb(255,255,255);
+    --rcx-color-surface-hover: #f2f9ff;
+    --rcx-color-font-default:#1F2329;
+    --rcx-color-font-white: #000;
+    --rcx-color-surface-tint: #fff;
+  }
+  
+  
+  .rcx-sidebar--main {
+    --rcx-color-surface-tint: #fff;
+    --rcx-color-stroke-medium: #f2f9ff;
+    --rcx-color-surface-hover: #f2f9ff;
+      --rcx-color-surface-selected:#ffcc1160;
+  
+  
+    --rcx-color-font-secondary-info: #1F2329;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+   ::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 10px;
+             background: #f2f9ff;
+    }
+    
+   ::-webkit-scrollbar-thumb {
+        background: #f2f9ff;
+        border-radius: 10px;
+    }
+    
+
+
+
+
+
+
+    /* Home Page Content in RC Dash */
+
+    /* <a href="/home"><img style="width:50%; margin-top:40%; margin-left:25%" src="assets/logo.png" alt="Home" /></a> */
+
+
+
+    /* Side Navigation Footer - Dark Theme */
+    /* <a href="/home"><img src="assets/logo.png" alt="Home" /></a> */
+
+
+    /* Side Navigation Footer */
+    /* <a href="/home"><img style="width:30%; height:auto" src="assets/logo.png" alt="Home" /></a> */
+
+
+    

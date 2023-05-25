@@ -48,9 +48,7 @@ export default defineNuxtConfig({
   },
   
   "nitro":{
-    preset: 'node-server',
-    prerender: {
-      crawlLinks: true
+    "preset":"node-server",
   },
   
   runtimeConfig: {
@@ -64,7 +62,6 @@ export default defineNuxtConfig({
 
 
 
-  
 
   
 });

@@ -54,8 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:7%;
-    margin-bottom:-15%
+    margin-top:15%;
+    margin-bottom:-10%
   }
   
   .background-text {

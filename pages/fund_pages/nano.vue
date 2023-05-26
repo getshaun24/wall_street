@@ -12,8 +12,13 @@
 
         <h3 class="fund_title">US Nanotechnology Fund A</h3>
 
+     
       <img src="~/assets/content/wallstreet/fund_pages/nano/nano_1.png" class="landing_image"/>
 
+
+    <!-- <div class="slab_container">
+      <img data-speed="auto" src="~/assets/content/wallstreet/fund_pages/nano/nano_1.png" class="landing_image"/>
+    </div> -->
 
     <div class="grid_container">
 
@@ -89,25 +94,27 @@
 
 <div class="sector_grid">
 
-    <div>
+    <div class="sector_container_1">
         <h6 class="sector_subtitle_1">Semiconductors</h6>
         <p class="sector_text_1">Semiconductors power everything from our phones and computers to airplanes and cars. Chip making machines (Fabs) are a massive investment at $150mm-$300mm each.<br><br><b>Nanocarbon Photoresists - a key component in the process - can increase the productivity of these Fabs up to 2.3X with a low cost.</b><br><br>No other photoresist has demonstrated this potential which has already been tested and “qualified” by global leaders in chip manufacturing.</p>
     </div>
 
-    <div>
+    <div class="sector_container_2">
         <h6 class="sector_subtitle_2">Solar</h6>
         <p class="sector_text_2">Tandem Perovskite — Silicon PV delivers up to 50% more power out of the same surface area with no increase in weight or installation cost, and no net increase in cost per watt vs silicon.<br><br>This leads to a 40% lower cost than fossil fuel by 2025 over the lifecycle.</p>
     </div>
 
-    <div>
+    <div class="sector_container_3">
         <h6 class="sector_subtitle_3">Battery Additives</h6>
         <p class="sector_text_3">Increases performance with reduced electrode degradation<br><br>Faster charge, increased range, and longer lifetime<br><br>Funded JDA with battery company for commercial EVs</p>
     </div>
 
-    <div>
-        <h6 class="sector_subtitle_4">Learn More</h6>
-        <p class="sector_text_4">GET Resources Group is our premium custodian for this fund.</p>
+    <div class="sector_container_4">
+        <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
+        <p data-speed=".9" class="sector_text_4">GET Resources Group is our premium custodian for this fund.</p>
+        <div data-speed=".85">
         <CWSButtonsButtonLoop class="sector_margin"/>
+        </div>
     </div>
 
 </div>
@@ -130,12 +137,111 @@
     </template>
     
     <script setup>
-    
-    
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+    gsap.registerPlugin(ScrollTrigger);
+
+               // sleep time expects milliseconds
+               function sleep (time) {
+          return new Promise((resolve) => setTimeout(resolve, time));
+        }
+
+  
+    onMounted(() => {
+        sleep(500).then(() => { 
+  
+//   gsap.from('.section_3_info_text', {
+//     y: 50, // start the animation from 50px below the original position
+//     autoAlpha: 0, // start from transparent
+//     duration: 1, // duration is in seconds
+//     ease: 'power3.out', // easing function to make the transition smooth
+//     scrollTrigger: {
+//       trigger: '.section_3_info_text',
+//       start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+//       end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+//     //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+//     toggleActions: "play pause resume reset",
+//     },
+//   });
+
+
+
+
+
+gsap.from('.sector_container_1', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_1',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+  gsap.from('.sector_container_2', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_2',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+
+
+  gsap.from('.sector_container_3', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_3',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+
+  gsap.from('.sector_container_4', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_4',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+
+
+
+})
+})
+
+
     
     </script>
     
     <style scoped>
+
+
+
     
     .fund_title{
         color: white;
@@ -149,11 +255,18 @@
     }
 
 
+    .slab_container{
+    width:100%;
+    height: 80vh;
+    margin-bottom: 10%;
+    margin-top: 0;
+    overflow: hidden
+}
+
     .landing_image{
-        width: 100%;
-        height: auto;
+        /* height: 85vh; */
+        width:100%;
         margin-bottom: 10%;
-        margin-top: 0;
     }
 
     .grid_container {
@@ -330,7 +443,7 @@
 
 .sector_margin{
     margin-left:60%;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 

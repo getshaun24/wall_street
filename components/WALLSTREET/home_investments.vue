@@ -16,8 +16,8 @@
                 </div>
             </div>
             <div class="title_container">
-            <h6 class="investment_title" :style="{ 'color': colors[0] }">NANO</h6>
-            <h6 class="investment_title" :style="{ 'color': colors[0] }">NANO</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[0] }">NanoCarbon</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[0] }">NanoCarbon</h6>
         </div>
             <p class="insvestment_subtitle">nanocarbon technologies</p>
         </div>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="title_container">
-            <h6 class="investment_title" :style="{ 'color': colors[1] }">Oil & Gas</h6>
-            <h6 class="investment_title" :style="{ 'color': colors[1] }">Oil & Gas</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[1] }">Eco Energy</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[1] }">Eco Energy</h6>
         </div>
             <p class="insvestment_subtitle">Oil & Gas Revitalization Fund</p>
         </div>
@@ -209,7 +209,8 @@ grid-column-gap: 50px;
 grid-row-gap: 250px;
 width:80%;
 margin-left:10%;
-margin-top:50%
+margin-top:40%;
+margin-bottom:-10%
 }
 .investment_container{
     cursor: pointer;
@@ -370,6 +371,9 @@ margin-top:50%
         padding-top: 10%;
         padding-bottom: 20%;
     }
+    .investment_title{
+    font-size:30px
+}
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -385,6 +389,9 @@ margin-top:50%
     padding-top:10%;
     width:90%
 }
+.investment_title{
+    font-size:40px
+}
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 5600px) {
@@ -399,6 +406,10 @@ margin-top:50%
     white-space: pre-wrap;
     padding-top:10%;
     width:90%
+}
+
+.investment_title{
+    font-size:50px
 }
 }
 

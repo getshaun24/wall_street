@@ -24,12 +24,12 @@
     
                     <br>
                 <div class="input_wrap">
-                <input v-model="email_2" type="text" class="input_white input_edit" placeholder=' ' required/>
+                <input v-model="subscribe_name" type="text" class="input_white input_edit" placeholder=' ' required/>
                 <label class="label_white label_edit" >Name</label>
               </div>
 
               <div class="input_wrap">
-                <input v-model="email_1" type="text" class="input_white input_edit" placeholder=' ' required/>
+                <input v-model="subscribe_email" type="text" class="input_white input_edit" placeholder=' ' required/>
                 <label class="label_white label_edit" >Email</label>
               </div>
     
@@ -62,8 +62,8 @@
     const modal_exit_anim = ref(true)
     const modal_exit_display = ref(true)
     
-    const email_1 = ref('')
-    const email_2 = ref('')
+    const subscribe_name = ref('')
+    const subscribe_email = ref('')
 
     const img_scale = ref(2)
     
@@ -100,53 +100,47 @@
     
     
     
-    function check_email(){
-        if (email_1.value != email_2.value || email_1.value == '' || email_2.value == ''){
-            alert("Emails do not match. Please try again.")
-        } else{
-          submit_form()
-        }
-    }
-    
+
 
     
     function submit_form(){
         
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!re.test(String(subscribe_email.value).toLowerCase())) {
+        alert('Email is not valid!');
+    } else {
+
     
     
-    // fetch(`${config.flask_url}/api/user_dashboard/update_email_and_pass/`, {
-    //       method: 'post',
-    //       mode: 'cors',
-    //       credentials: 'include',
-    //       headers: {
-    //           'Accept': 'application/json',
-    //           'Content-Type': 'application/json',
-    //           'X-CSRF-TOKEN': csrf_cookie.value
-    //       },
-    //       body: JSON.stringify({email_or_password: email_or_password.value.toLowerCase(), password:pass_1.value, email:email_1.value})
-    //   })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //        notification_count.value = data.notification_count;
+    fetch(`${config.flask_url}/api/WALLSTREET_conatcat_and_sub/`, {
+        method: 'post',
+      mode: 'cors',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: 'include',
+          body: JSON.stringify({subscribe_name:subscribe_name.value, subscribe_email: subscribe_email.value})
+      })
+      .then((response) => response.json())
+      .then((data) => {
+           alert(data.message)
+           if (data.status == 'success_email_added'){
+            modal_leave()
+           } 
     
-    //        alert(data.msg)
-    //        if (data.status == 'email_or_password_updated'){
-    //         notification_count.value = data.notification_count;
-    //         modal_leave()
-    //        } 
+      })
+      .catch(error => {
+          console.error('There was an error!', error);
+      });
     
-    //   })
-    //   .catch(error => {
-    //       //  alert("Error")
-    //       console.error('There was an error!', error);
-    //     //   navigateTo('/login_pages/login')
-    //   });
-    
-    //     }
-    
-    
-    
+        }
+
     }
+    
+    
+    
+    
     
     
     

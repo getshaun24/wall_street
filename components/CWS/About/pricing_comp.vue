@@ -1,5 +1,5 @@
 <template>
-  <MainTransition ref="main_tansition"/>
+<WALLSTREETEmailModal ref="open_it"/>
 
     <div class="pricing_grid" ref="pricing">
       <div class="card_grd">
@@ -10,7 +10,7 @@
           <span class="currency">$</span>
           <span class="amount">Free</span>
         </div>
-        <button @click="transition_and_route('/login_pages/sign_up')" class="start_button">Get Started</button>
+        <button @click="open_popup_modal()" class="start_button">Get Started</button>
       </div>
       <!-- <div class="card" style="margin-top:100px">
         <h6 class="title">Monthly Insight Plan</h6>
@@ -65,10 +65,11 @@
     }
   })
 
-  const main_tansition = ref(null);
-function transition_and_route(route_to) {
-    main_tansition.value.animation_and_route(route_to);
+  const open_it = ref(null);
+function open_popup_modal() {
+  open_it.value.open_modal();
 }
+
   </script>
   
   <style scoped>
@@ -97,6 +98,13 @@ grid-column-gap: 0px;
 grid-row-gap: 40px;
   }
 
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   .card_grd{
     background-color: #ffffff;
@@ -106,7 +114,11 @@ grid-row-gap: 40px;
     border-radius:40px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height:93% 
+    height:93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .card_small {
     background-color: #ffffff;
@@ -206,6 +218,16 @@ grid-row-gap: 40px;
     text-align: center;
     height: 400px
   }
+
+  .start_button{
+    margin-top:-15px;
+}
+
+.price {
+    margin-top:-20px;
+    margin-bottom:50px
+  }
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -234,15 +256,46 @@ grid-row-gap: 40px;
     text-align: center;
     height: 400px
   }
+
+  .start_button{
+    margin-top:-15px;
+}
+
+.price {
+    margin-top:-20px;
+    margin-bottom:50px
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .title{
+    margin-top:-120px;
+    margin-bottom:30px
+  }
+
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
+  .title{
+    margin-top:-120px;
+    margin-bottom:30px
+  }
+
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1325px) {
+  .title{
+    margin-top:-220px;
+    margin-bottom:30px
+  }
+}
+
+@media only screen and (min-width: 1325px) and (max-width: 1400px) {
+  .title{
+    margin-top:-80px;
+    margin-bottom:30px
+  }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {

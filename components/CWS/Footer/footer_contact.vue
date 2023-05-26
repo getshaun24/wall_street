@@ -7,7 +7,7 @@
               <div class="footer_grid_left">
                 <div class="footer_elm_left">
                   <h5 style="margin:0">Fund Insights</h5>
-                  <span class="footer_subheading">Curated For You.</span>
+                  <span class="footer_subheading">Curated. For You.</span>
                 </div>
 
                 <video 
@@ -20,9 +20,9 @@
   <source src="~/assets/content/wallstreet/wallstreet_logo_1.mp4" type="video/mp4">
 </video>
 
-                <div class="footer_elm_left" style="padding-top:5px">
-                  <span class="footer_subheading">Copyright © GET MEDIA 2022</span>
-                </div>
+<div class="footer_elm_left" style="padding-top:3px">
+                    <span class="footer_subheading">Copyright © The Wallstreet Network 2021</span>
+                  </div>
               </div>
 
             </div>

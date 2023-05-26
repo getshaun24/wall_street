@@ -18,20 +18,20 @@
 
 
 
-<swiper-slide><h6 class="swiper_title">AI-Powered Negotiation</h6><img class="swiper_img" src="~/assets/content/services/services_2a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Secure Cloud Network</h6><img class="swiper_img" src="~/assets/content/services/services_3a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Seamless Payments</h6><img class="swiper_img" src="~/assets/content/services/services_4a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Algorithmically Fair</h6><img class="swiper_img" src="~/assets/content/services/services_5a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Seamless Payments</h6><img class="swiper_img" src="~/assets/content/services/services_6a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Saves You $$$</h6><img class="swiper_img" src="~/assets/content/services/services_1a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">A.I Assisted Selections</h6><img class="swiper_img" src="~/assets/content/services/services_2a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Premium Access</h6><img class="swiper_img" src="~/assets/content/services/services_3a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Curating Key Funds</h6><img class="swiper_img" src="~/assets/content/services/services_4a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">High Growth Funds</h6><img class="swiper_img" src="~/assets/content/services/services_5a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Team of Analysts</h6><img class="swiper_img" src="~/assets/content/services/services_6a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Full Transparency</h6><img class="swiper_img" src="~/assets/content/services/services_1a.jpg" /></swiper-slide>
 
 <!-- ------------------------------ Duplicates ------------------------------ -->
-<swiper-slide><h6 class="swiper_title">AI-Powered Negotiation</h6><img class="swiper_img" src="~/assets/content/services/services_2a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Secure Cloud Network</h6><img class="swiper_img" src="~/assets/content/services/services_3a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Seamless Payments</h6><img class="swiper_img" src="~/assets/content/services/services_4a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Algorithmically Fair</h6><img class="swiper_img" src="~/assets/content/services/services_5a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Seamless Payments</h6><img class="swiper_img" src="~/assets/content/services/services_6a.jpg" /></swiper-slide>
-<swiper-slide><h6 class="swiper_title">Saves You $$$</h6><img class="swiper_img" src="~/assets/content/services/services_1a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">A.I Assisted Selections</h6><img class="swiper_img" src="~/assets/content/services/services_2a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Premium Access</h6><img class="swiper_img" src="~/assets/content/services/services_3a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Curating Key Funds</h6><img class="swiper_img" src="~/assets/content/services/services_4a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">High Growth Funds</h6><img class="swiper_img" src="~/assets/content/services/services_5a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Team of Analysts </h6><img class="swiper_img" src="~/assets/content/services/services_6a.jpg" /></swiper-slide>
+<swiper-slide><h6 class="swiper_title">Full Transparency</h6><img class="swiper_img" src="~/assets/content/services/services_1a.jpg" /></swiper-slide>
 <!-- ------------------------------ Duplicates ------------------------------ -->
 
 </swiper>

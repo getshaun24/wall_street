@@ -6,7 +6,7 @@
         <CWSServicesLanding/>
         <CWSServicesBlocks/>
       <CWSServicesImageLeftTextRight/>
-      <WALLSTREETScrollText />
+      <LazyWALLSTREETScrollTextServices/>
       <CWSAboutPricingComp/>  
       <CWSButtonsStickyButton/>
       <CWSHomeBottomCards/>

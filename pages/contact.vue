@@ -31,15 +31,18 @@ Charleston,<br>South Carolina 29403</p>
         <h6 class="form_title">Let's Talk.<br>We Are Here For You.</h6>
 
         <div class="form_input_container">
-        <input type="text" class="form_input" name="First Name" placeholder="First Name">
-        <input type="text" class="form_input" name="Last Name" placeholder="Last Name">
+        <input type="text" class="form_input" v-model="first_name" placeholder="First Name">
+        <input type="text" class="form_input" v-model="contact_email" placeholder="Email">
     </div>
     </div>
     <div class="col_3">
 
         <div class="form_input_container">
-        <input type="text" class="form_input" name="First Name" placeholder="Email">
-        <input type="text" class="form_input" name="Last Name" placeholder="Phone Number">
+        <input type="text" class="form_input" v-model="last_name" placeholder="Last Name">
+        <div>
+        <input ref="phone_focused" @keyup="remove_chrs" @keypress="onPhoneKeyPress" maxlength="17" type="text" class="form_input" v-model="phone" placeholder="Phone">
+        <span v-if="show_international" class="international_toggle" @click="international_toggle"> {{ inter_text }}</span>
+        </div>
     </div>
 
         <div class="left_box_line"></div>
@@ -52,9 +55,9 @@ Charleston,<br>South Carolina 29403</p>
     </div>
 </div>
 
-<textarea class="form_input_area" placeholder="Comment" name="comment" ></textarea>
+<textarea style="z-index:5" class="form_input_area" placeholder="Message" v-model="message" ></textarea>
 
-<button class="submit_button">Submit</button>
+<button @click="submit_contact_message" class="submit_button">Submit</button>
 
 
 
@@ -72,13 +75,14 @@ Charleston,<br>South Carolina 29403</p>
     <div class="mobile_form_background">
 
         <div class="form_input_container">
-        <input type="text" class="form_input" name="First Name" placeholder="First Name">
-        <input type="text" class="form_input" name="Last Name" placeholder="Last Name">
-        <input type="text" class="form_input" name="First Name" placeholder="Email">
-        <input type="text" class="form_input" name="Last Name" placeholder="Phone Number">
-        <textarea class="form_input_area" placeholder="Comment" name="comment" ></textarea>
+        <input type="text" class="form_input" v-model="first_name" placeholder="First Name">
+        <input type="text" class="form_input" v-model="last_name" placeholder="Last Name">
+        <input type="text" class="form_input" v-model="contact_email" placeholder="Email">
+        <input ref="phone_focused" @keyup="remove_chrs" @keypress="onPhoneKeyPress" maxlength="17"  type="text" class="form_input" v-model="phone" placeholder="Phone">
+        <span v-if="show_international" class="international_toggle" @click="international_toggle"> {{ inter_text }}</span>
+        <textarea class="form_input_area" placeholder="Message" v-model="message" ></textarea>
 
-        <button class="submit_button">Submit</button>
+        <button @click="submit_contact_message" class="submit_button">Submit</button>
     </div>
 
     <div class="contact_info">
@@ -137,6 +141,140 @@ import { gsap } from 'gsap'
         if (process.client) {
   gsap.registerPlugin(ScrollTrigger);
 }
+
+const config = useRuntimeConfig()
+
+const first_name = ref('')
+        const last_name = ref('')
+        const contact_email = ref('')
+        const phone = ref('')
+        const message = ref('')
+
+
+        function submit_contact_message (){
+           
+            if (first_name.value == '' || last_name.value == '' || contact_email.value == '' || phone.value == '' || message.value == ''){
+                alert('Please fill out all fields')
+                return
+            }
+
+
+            fetch(`${config.flask_url}/api/WALLSTREET_conatcat_and_sub/`, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({first_name:first_name.value, last_name:last_name.value, contact_email:contact_email.value, phone:phone.value, message:message.value})
+    })
+    .then((response) => response.json())
+    .then((data) => {
+
+
+        if (data.status == 'success_contact_sent') {
+            alert(data.message)
+        } else {
+            alert(data.message)
+        }
+
+    })
+    .catch(error => {
+        alert('Error')
+        start_loader.value = false;
+        console.error('There was an error!', error);
+    });
+
+
+
+        }
+
+
+
+
+
+
+        function onPhoneKeyPress(e) {
+    const key = e.keyCode || e.charCode;
+    const len_phone = phone.value.length
+
+    if (!is_international.value){
+    if (key !== 8 || key !==  46) {
+    if(len_phone == 12){
+        phone.value = phone.value + '-'
+        }
+    else if (len_phone == 7){   
+        phone.value = phone.value + ') '
+        }
+    else if (len_phone == 0){   
+        phone.value = '+1 ('
+        }}
+
+    }else{
+        if (len_phone == 0){   
+        phone.value = '+'
+        }
+}
+
+
+
+}
+
+function remove_chrs() {
+    phone.value = phone.value.toString().replace(/[^0-9-()-+ ]/g, '');
+}
+
+
+
+
+const is_international = ref(false)
+const is_international_color = ref('#1b91ebb3')
+const inter_text = ref('International ?')
+const inter_margin = ref('-32%')
+const show_international = ref(false)
+
+
+function international_toggle() {
+    is_international.value = !is_international.value
+    if (is_international.value) {
+        is_international_color.value = '#06ae46'
+        phone.value = '+' + phone.value.toString().replace(/[^0-9]/g, '').substring(1);
+        inter_text.value = 'U.S. ?'
+        phone_focused.value.focus()
+        sleep(1110).then(() => {show_international.value = true})
+        sleep(800).then(() => { inter_opacity.value = 1, inter_margin.value = '-27%' })
+} else{
+        is_international_color.value = '#1b91ebb3'
+        phone.value = '+1 ('
+        inter_text.value = 'International ?'
+        phone_focused.value.focus()
+        sleep(1110).then(() => {show_international.value = true})
+        sleep(800).then(() => { inter_opacity.value = 1, inter_margin.value = '-32%' })
+}
+}
+
+
+const inter_opacity = ref(1)
+const phone_focused = ref()
+const { focused } = useFocus(phone_focused)
+
+watch(focused, (focused) => {
+  if (focused) {
+    show_international.value = true
+    sleep(10).then(() => { inter_opacity.value = 1, inter_margin.value = '-27%' })
+  }
+  else{
+    sleep(1100).then(() => {show_international.value = false})
+    sleep(800).then(() => { inter_opacity.value = 0, inter_margin.value = '-32%' })
+  }
+})
+
+    
+
+
+
+
+
+
 
 
 
@@ -313,6 +451,7 @@ import { gsap } from 'gsap'
     background-color: #ffffff34;
     backdrop-filter: blur(15px);
     height:90vh;
+    z-index:5
 
 }
 
@@ -400,7 +539,7 @@ import { gsap } from 'gsap'
 .form_input_area{
     border-bottom:#000 solid 1px;
     margin-top:27%;
-    color:#fff;
+    color:#000;
     padding:10px;
     margin-left:27%;
     background-color: #18181800;

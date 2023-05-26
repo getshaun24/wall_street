@@ -1,5 +1,6 @@
 <template>
   <MainTransition ref="mainTransition"/>
+  <WALLSTREETEmailModal ref="open_it"/>
 
   <div 
     ref="buttonContainer"
@@ -50,7 +51,17 @@ const resetButtonPosition = () => {
 
 const mainTransition = ref(null)
 const transitionAndRoute = (routeTo) => {
+  if (routeTo === 'signup') {
+    open_popup_modal()
+  } else{
   mainTransition.value.animation_and_route(routeTo)
+  }
+}
+
+
+const open_it = ref(null);
+function open_popup_modal() {
+  open_it.value.open_modal();
 }
 </script>
 

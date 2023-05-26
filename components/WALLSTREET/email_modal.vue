@@ -195,6 +195,8 @@ margin-top:-50px
     .modal_img{
         width:100%;
         height:65vh;
+        object-fit: cover;
+        object-position: 50% 50%;
         transition: all 1s ease-in-out .25s;
     }
     

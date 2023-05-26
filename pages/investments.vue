@@ -415,6 +415,9 @@ function nav_to(page_link){
         padding-top: 10%;
         padding-bottom: 20%;
     }
+    .investment_title{
+    font-size:30px
+}
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -430,6 +433,9 @@ function nav_to(page_link){
     padding-top:10%;
     width:90%
 }
+.investment_title{
+    font-size:40px
+}
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 5600px) {
@@ -444,6 +450,9 @@ function nav_to(page_link){
     white-space: pre-wrap;
     padding-top:10%;
     width:90%
+}
+.investment_title{
+    font-size:50px
 }
 }
 

@@ -295,22 +295,26 @@ margin-left:7.5%
 }
 
 .left_img_1{
-    height:100%;
-    width:auto;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 
 }
 
 .left_img_2{
     width:100%;
-    height:auto
+    height: 100%;
+    object-fit: cover;
 }
 .left_img_3{
     width:100%;
-    height:auto
+    height: 100%;
+    object-fit: cover;
 }
 .left_img_4{
     width:100%;
-    height:auto
+    height: 100%;
+    object-fit: cover;
 }
 
 .white_mask_background{

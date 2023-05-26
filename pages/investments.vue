@@ -27,10 +27,10 @@
         </div>
     </div>
     <div class="title_container">
-    <h6 class="investment_title" :style="{ 'color': colors[0] }">NANO</h6>
-    <h6 class="investment_title" :style="{ 'color': colors[0] }">NANO</h6>
+    <h6 class="investment_title" :style="{ 'color': colors[0] }">NanoCarbon</h6>
+    <h6 class="investment_title" :style="{ 'color': colors[0] }">NanoCarbon</h6>
 </div>
-    <p class="insvestment_subtitle">nanocarbon technologies</p>
+    <p class="insvestment_subtitle">Nanocarbon Technologies</p>
 </div>
 
 
@@ -43,10 +43,10 @@
         </div>
     </div>
     <div class="title_container">
-    <h6 class="investment_title" :style="{ 'color': colors[1] }">Oil & Gas</h6>
-    <h6 class="investment_title" :style="{ 'color': colors[1] }">Oil & Gas</h6>
+    <h6 class="investment_title" :style="{ 'color': colors[1] }">Eco Energy</h6>
+    <h6 class="investment_title" :style="{ 'color': colors[1] }">Eco Energy</h6>
 </div>
-    <p class="insvestment_subtitle">Oil & Gas Revitalization Fund</p>
+    <p class="insvestment_subtitle">Oil & Gas Revitalization</p>
 </div>
 
 

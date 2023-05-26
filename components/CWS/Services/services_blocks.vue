@@ -59,7 +59,8 @@
 const sign_up_props = {
   button_text: 'Sign Up',
   background_color: '#fafdff',
-  color: '#000'
+  color: '#000',
+  link_to:'signup'
 }
 
 </script>

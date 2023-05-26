@@ -12,8 +12,12 @@
 
         <h3 class="fund_title">Eco Energy Partners</h3>
 
-      <img src="~/assets/content/wallstreet/fund_pages/eco/eco_1.png" class="landing_image"/>
+       <img src="~/assets/content/wallstreet/fund_pages/eco/eco_1.png" class="landing_image"/>
 
+
+    <!-- <div class="slab_container">
+      <img data-speed="auto" src="~/assets/content/wallstreet/fund_pages/eco/eco_1.png" class="landing_image"/>
+    </div> -->
 
     <div class="grid_container">
 
@@ -96,25 +100,27 @@
 
 <div class="sector_grid">
 
-    <div>
+    <div class="sector_container_1">
         <h6 class="sector_subtitle_1">20%+ Growth Annually</h6>
         <p class="sector_text_1">The underlying company has been growing by over 20% annually for over 25 years. They have the team, the technology, and the experience to grow. For a limited time they are open to outside investment.</p>
     </div>
 
-    <div>
+    <div class="sector_container_2" >
         <h6 class="sector_subtitle_2">Top Tier Team</h6>
         <p class="sector_text_2">The management has more than 30 years experience each in Oil & Gas, working for companies like Haliburton and XTO Energy. Their dedicated field team has decades experience on rigs extracting Oil & Gas in Texas.</p>
     </div>
 
-    <div>
+    <div class="sector_container_3" >
         <h6 class="sector_subtitle_3">Massive Tax Advantages</h6>
         <p class="sector_text_3">Using the Intangible Drilling Expense write-off and depletion tax law enables investors to obtain substantial upfront tax savings. This creates value for investors by maximizing profits and tax preferences</p>
     </div>
 
-    <div>
-        <h6 class="sector_subtitle_4">Learn More</h6>
-        <p class="sector_text_4">GET Resources Group is our premium custodian for this fund.</p>
+    <div class="sector_container_4">
+        <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
+        <p data-speed=".9" class="sector_text_4">GET Resources Group is our premium custodian for this fund.</p>
+        <div data-speed=".85">
         <CWSButtonsButtonLoop class="sector_margin"/>
+        </div>
     </div>
 
 </div>
@@ -137,8 +143,107 @@
     </template>
     
     <script setup>
-    
-    
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+    gsap.registerPlugin(ScrollTrigger);
+
+               // sleep time expects milliseconds
+               function sleep (time) {
+          return new Promise((resolve) => setTimeout(resolve, time));
+        }
+
+  
+    onMounted(() => {
+        sleep(500).then(() => { 
+  
+//   gsap.from('.section_3_info_text', {
+//     y: 50, // start the animation from 50px below the original position
+//     autoAlpha: 0, // start from transparent
+//     duration: 1, // duration is in seconds
+//     ease: 'power3.out', // easing function to make the transition smooth
+//     scrollTrigger: {
+//       trigger: '.section_3_info_text',
+//       start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+//       end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+//     //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+//     toggleActions: "play pause resume reset",
+//     },
+//   });
+
+
+
+
+
+gsap.from('.sector_container_1', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_1',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+  gsap.from('.sector_container_2', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_2',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+
+
+  gsap.from('.sector_container_3', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_3',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+
+  gsap.from('.sector_container_4', {
+    y: 100, // start the animation from 50px below the original position
+    autoAlpha: 0, // start from transparent
+    duration: 2, // duration is in seconds
+    ease: 'power3.out', // easing function to make the transition smooth
+    scrollTrigger: {
+      trigger: '.sector_container_4',
+      start: 'top bottom', // when the top of the trigger hits the bottom of the viewport
+      end: 'bottom top', // when the bottom of the trigger hits the top of the viewport
+    //   scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    toggleActions: "play pause resume reset",
+    },
+  });
+
+
+
+
+})
+})
+
+
+
+
+
     
     </script>
     
@@ -156,12 +261,20 @@
     }
 
 
-    .landing_image{
-        width: 100%;
-        height: auto;
+    .slab_container{
+    width:100%;
+    height: 78vh;
+    margin-bottom: 10%;
+    margin-top: 0;
+    overflow: hidden
+}
+
+.landing_image{
+        /* height: 85vh; */
+        width:100%;
         margin-bottom: 10%;
-        margin-top: 0;
     }
+
 
     .grid_container {
   display: grid;
@@ -312,6 +425,7 @@
     font-size:50px;
     color:green;
     margin:60px 0 0 0;
+    margin-top:45px;
     margin-left:60%
 }
 .sector_text_2{
@@ -327,7 +441,7 @@
     font-size:50px;
     color:green;
     margin:60px 0 0 0;
-    margin-top:3%
+    margin-top:80px;
 }
 .sector_text_3{
     color:#fff;
@@ -353,7 +467,7 @@
 
 .sector_margin{
     margin-left:60%;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 

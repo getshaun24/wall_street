@@ -55,7 +55,8 @@
     align-items: center;
     justify-content: center;
     margin-top:15%;
-    margin-bottom:-10%
+    margin-bottom:-10%;
+    overflow:hidden
   }
   
   .background-text {

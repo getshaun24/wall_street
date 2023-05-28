@@ -2,63 +2,119 @@
     
 
 
-    <div class="sticky_grid">
 
-        <div class="left_images">
+    <div class="sticky_grid is_desktop" >
 
-            <div class="sticky_img_1">
-                <div class="stickyBoxPaperOverlay"></div>
-            <img class="left_img_1" src="~/assets/content/homepage/home_10.png" alt="">
-            </div>
-            <div class="white_mask"></div>
-            <div class="white_mask_background"></div>
-            <div class="sticky_img_2">
-                <div class="stickyBoxPaperOverlay"></div>
-            <img class="left_img_2" src="~/assets/content/homepage/home_11.png" alt="">
-            </div>
-            <div class="sticky_img_3">
-                <div class="stickyBoxPaperOverlay"></div>
-            <img class="left_img_3" src="~/assets/content/homepage/home_12.png" alt="">
-            </div>
-            <div class="sticky_img_4">
-                <div class="stickyBoxPaperOverlay"></div>
-            <img class="left_img_4" src="~/assets/content/homepage/home_13.png" alt="">
-            </div>
+<div class="left_images">
+
+    <div class="sticky_img_1">
+        <div class="stickyBoxPaperOverlay"></div>
+    <img class="left_img_1" src="~/assets/content/wallstreet/home/home_6.jpg" alt="">
+    </div>
+    <div class="white_mask"></div>
+    <div class="white_mask_background"></div>
+    <div class="sticky_img_2">
+        <div class="stickyBoxPaperOverlay"></div>
+    <img class="left_img_2" src="~/assets/content/wallstreet/home/home_9.jpg" alt="">
+    </div>
+    <div class="sticky_img_3">
+        <div class="stickyBoxPaperOverlay"></div>
+    <img class="left_img_3" src="~/assets/content/wallstreet/home/home_8.jpg" alt="">
+    </div>
+    <div class="sticky_img_4">
+        <div class="stickyBoxPaperOverlay"></div>
+    <img class="left_img_4" src="~/assets/content/wallstreet/home/home_7.jpg" alt="">
+    </div>
+</div>
+
+<div class="right_text">
+
+    <div class="text_box_1" data-speed="1.65">
+        <div class="icon_1 icons"><div class="icon_box">Aggregate Information<img class="icon_img" src="~/assets/content/homepage/home_15.png"></div></div>
+    <h3 class="sticky_title_text">Concise, curated insights from the private equity landscape</h3>
+    <p class="body_text">Wall Street Network (WSN) serves as a hub for insightful data from the private equity realm. Through comprehensive data aggregation, it gathers and curates critical information from diverse sources, providing a concise overview of private equity firms and their investment deals. This approach aids in presenting a broad, detailed, and user-friendly perspective of the private equity ecosystem.</p>
+</div>
+
+<div class="text_box_2" data-speed="1.65">
+    <div class="icon_2 icons"><div class="icon_box">Highlight Impactful Firms<img class="icon_img" src="~/assets/content/homepage/home_16.png"></div></div>
+<h3 class="sticky_title_text">Showcasing firms, sustainable investing</h3>
+    <p class="body_text">Featuring firms invested in environmentally-friendly technologies
+WSN emphasizes private equity firms that are contributing positively to the environment by prioritizing investments in green technologies. By showcasing these firms, WSN fosters sustainable and environmentally-conscious investing within the private equity sector.</p>
+</div>
+
+<div class="text_box_3" data-speed="1.65">
+<div class="icon_3 icons"><div class="icon_box">Identify Unique Deals<img class="icon_img" src="~/assets/content/homepage/home_17.png"></div></div>
+<h3 class="sticky_title_text">Private access into gated deals</h3>
+    <p class="body_text">WSN provides insights into unique and transformative investment transactions. It showcases deals that are innovative, disruptive, or transformative, keeping investors and stakeholders informed about emerging trends, market dynamics, and unique investment opportunities within the private equity space.</p>
+</div>
+
+<div class="end_trigger" style="margin-top:40vh"></div>
+<div class="text_box_4" data-speed="1.65">
+<div class="icon_4 icons"><div class="icon_box">Empower Decision-Making<img class="icon_img" src="~/assets/content/homepage/home_18.png"></div></div>
+<h3 class="sticky_title_text">Enabling informed decisions with comprehensive market insights</h3>
+    <p class="body_text">WSN offers valuable insights and data to help investors and professionals make informed decisions. By serving as a centralized hub for private equity-related information, WSN enables users to stay ahead of market trends, understand firms making a positive impact, and identify compelling deals. This ultimately empowers users to make informed investment decisions.</p>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="mobile_grid">
+
+    <div class="mobile_image_container">
+    <img data-speed="auto" class="mobile_image" src="~/assets/content/wallstreet/home/home_6.jpg" alt="">
     </div>
 
-        <div class="right_text">
+    <div class="blur_box" data-speed=".8">
+        <div class="icon_1 icons"><div class="icon_box">Aggregate Information<img class="icon_img" src="~/assets/content/homepage/home_15.png"></div></div>
+    <h3 class="sticky_title_text">Concise, curated insights from the private equity landscape</h3>
+    <p class="body_text">Wall Street Network (WSN) serves as a hub for insightful data from the private equity realm. Through comprehensive data aggregation, it gathers and curates critical information from diverse sources, providing a concise overview of private equity firms and their investment deals. This approach aids in presenting a broad, detailed, and user-friendly perspective of the private equity ecosystem.</p>
+</div>
 
-            <div class="text_box_1">
-                <div class="icon_1 icons">Fast and Fair Deals<img class="icon_img" src="~/assets/content/homepage/home_15.png"></div>
-            <h3 style="font-size: 2.5rem;">Enter Your Amounts and Share With Counterparty</h3>
-            <p class="body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-   
-        <div class="text_box_2">
-            <div class="icon_2 icons">Algorithmic Consensus<img class="icon_img" src="~/assets/content/homepage/home_16.png"></div>
-        <h3 style="font-size: 2.5rem;">We determine if there is a match</h3>
-            <p class="body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-    <div class="text_box_3">
-        <div class="icon_3 icons">Easy Communication<img class="icon_img" src="~/assets/content/homepage/home_17.png"></div>
-        <h3 style="font-size: 2.5rem;">We determine if there is a match</h3>
-            <p class="body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-  
-        <div class="end_trigger" style="margin-top:40vh"></div>
-    <div class="text_box_4">
-        <div class="icon_4 icons">Full Settlement Pipeline<img class="icon_img" src="~/assets/content/homepage/home_18.png"></div>
-        <h3 style="font-size: 2.5rem;">We determine if there is a match</h3>
-            <p class="body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+<div class="mobile_image_container">
+    <img data-speed="auto" class="mobile_image" src="~/assets/content/wallstreet/home/home_9.jpg" alt="">
     </div>
 
+<div class="blur_box" data-speed=".8">
+    <div class="icon_2 icons"><div class="icon_box">Highlight Impactful Firms<img class="icon_img" src="~/assets/content/homepage/home_16.png"></div></div>
+<h3 class="sticky_title_text">Showcasing firms, sustainable investing</h3>
+    <p class="body_text">Featuring firms invested in environmentally-friendly technologies
+WSN emphasizes private equity firms that are contributing positively to the environment by prioritizing investments in green technologies. By showcasing these firms, WSN fosters sustainable and environmentally-conscious investing within the private equity sector.</p>
+</div>
+
+<div class="mobile_image_container">
+    <img data-speed="auto" class="mobile_image" src="~/assets/content/wallstreet/home/home_8.jpg" alt="">
     </div>
+
+<div class="blur_box" data-speed=".8">
+<div class="icon_3 icons"><div class="icon_box">Identify Unique Deals<img class="icon_img" src="~/assets/content/homepage/home_17.png"></div></div>
+<h3 class="sticky_title_text">Private access into gated deals</h3>
+    <p class="body_text">WSN provides insights into unique and transformative investment transactions. It showcases deals that are innovative, disruptive, or transformative, keeping investors and stakeholders informed about emerging trends, market dynamics, and unique investment opportunities within the private equity space.</p>
+</div>
+
+<div class="mobile_image_container">
+    <img data-speed="auto" class="mobile_image" src="~/assets/content/wallstreet/home/home_7.jpg" alt="">
+    </div>
+
+<div class="blur_box" data-speed=".8">
+<div class="icon_4 icons"><div class="icon_box">Empower Decision-Making<img class="icon_img" src="~/assets/content/homepage/home_18.png"></div></div>
+<h3 class="sticky_title_text">Enabling informed decisions with comprehensive market insights</h3>
+    <p class="body_text">WSN offers valuable insights and data to help investors and professionals make informed decisions. By serving as a centralized hub for private equity-related information, WSN enables users to stay ahead of market trends, understand firms making a positive impact, and identify compelling deals. This ultimately empowers users to make informed investment decisions.</p>
+</div>
+
+
+
+</div>
+
+
+
+
 </template>
 
 
 <script setup>
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -71,7 +127,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
         onMounted(() => {
-              sleep(1000).then(() => { 
+              sleep(100).then(() => { 
 
 
 
@@ -124,6 +180,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 <style scoped>
 
+
+
+
+/* --------- sticky box ------------ */
+/* --------- sticky box ------------ */
+
+
+
 .sticky_grid{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -134,6 +198,10 @@ margin-top:10%;
 margin-bottom:10%;
 width:80%;
 margin-left:7.5%
+}
+
+.sticky_title_text{
+   font-size: 2.5rem
 }
 
 .left_images{
@@ -157,7 +225,7 @@ margin-left:7.5%
 
 
 .sticky_img_1 {
-    background-color: #a7d3e8;
+    background-color: #657495;
     z-index:1;
     width:100%;
     height:80vh;
@@ -208,22 +276,26 @@ margin-left:7.5%
 }
 
 .left_img_1{
-    width:70%;
-    height:auto;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 
 }
 
 .left_img_2{
-    width:80%;
-    height:auto
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 }
 .left_img_3{
     width:100%;
-    height:auto
+    height: 100%;
+    object-fit: cover;
 }
 .left_img_4{
     width:100%;
-    height:auto
+    height: 100%;
+    object-fit: cover;
 }
 
 .white_mask_background{
@@ -271,11 +343,19 @@ margin-left:7.5%
 
 .icons{
 border-radius:15px;
-width:210px;
-padding:10px 20px;
+width:240px;
+padding:12px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.icon_box{
+    margin-left:-15px;
+    padding-right:18px
 }
 .icon_1{
-    background-color: #a7d3e8;
+    background-color: #b6e0ff;
 }
 
 .icon_2{
@@ -301,4 +381,132 @@ padding:10px 20px;
 .body_text{
     font-size:130%
 }
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+
+    .is_desktop{
+        display:none
+    }
+    .mobile_grid{
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin-bottom:-100%
+}
+
+.mobile_image_container{
+    width:80%;
+    height:50vh;
+    overflow:hidden;
+    margin-left:10%;
+    border-radius:25px
+}
+
+.mobile_image{
+    width:100%;
+    height:105%;
+    object-fit:cover
+}
+
+
+
+.body_text{
+    font-size:90%
+}
+.sticky_title_text{
+   font-size: 130%
+}
+
+.blur_box{
+    margin-top:0%;
+    background-color: #ffffff9e;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #0000001a;
+    backdrop-filter: blur(10px);
+    width:80%;
+    margin-left:5%;
+    height:400px;
+    margin-bottom:-50%
+}
+
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .is_desktop{
+        display:none
+    }
+    .mobile_grid{
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin-bottom:-150%
+}
+
+.mobile_image_container{
+    width:80%;
+    height:50vh;
+    overflow:hidden;
+    margin-left:10%;
+    border-radius:25px
+}
+
+.mobile_image{
+    width:100%;
+    height:105%;
+    object-fit:cover
+}
+
+
+
+.body_text{
+    font-size:90%
+}
+.sticky_title_text{
+   font-size: 130%
+}
+
+.blur_box{
+    margin-top:0%;
+    background-color: #ffffff9e;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #0000001a;
+    backdrop-filter: blur(10px);
+    width:80%;
+    margin-left:5%;
+    height:300px;
+    margin-bottom:-50%
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 5600px) {
+}
 </style>
+
+

@@ -12,7 +12,7 @@
         <div  @click="nav_to('/fund_pages/eco')" class="investment_container">
             <div class="video_container_outer" :style="{ 'background-color': colors[1] }">
                 <div class="video_container_inner">
-                    <video class="video_style" autoplay muted loop>
+                    <video class="video_style" autoplay muted loop playsinline>
                         <source src="~/assets/content/wallstreet/videos/oil_and_gas.mp4" type="video/mp4">
                     </video>
                 </div>

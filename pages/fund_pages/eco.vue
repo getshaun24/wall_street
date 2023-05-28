@@ -555,6 +555,40 @@ gsap.from('.sector_container_1', {
     margin-top:-55%
 }
 
+.fund_title{
+        padding-top: 25%;
+    }
+
+    .center_img_container_outer{
+    margin-top:15%
+}
+
+.section_3_container{
+    margin-bottom:25%
+}
+
+.vimeo{
+    height:15vh;
+}
+
+.sector_container_4{
+    margin-top:25%
+}
+
+.sector_subtitle_1, .sector_subtitle_2, .sector_subtitle_3, .sector_subtitle_4{
+    font-size:40px;
+    margin-top:30px
+}
+
+.sector_margin{
+    margin-left:30%;
+    margin-top: 95px;
+}
+
+.section_3_text{
+    width:100%
+}
+
 
 }
 
@@ -644,6 +678,12 @@ gsap.from('.sector_container_1', {
 .three_grid_container{
     margin-top:20%
 }
+
+.fund_title{
+        padding-top: 25%;
+    }
+
+
 
 }
 

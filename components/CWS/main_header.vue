@@ -7,6 +7,7 @@
         <video 
             ref="videoRef" 
             muted 
+            playsinline
             class="logo_vid"
             @mouseenter="playVideo"
             @click="transition_and_route('/')"
@@ -31,6 +32,7 @@
     <video 
             ref="videoRef_1" 
             muted 
+            playsinline
             class="logo_vid"
             @mouseenter="playVideo"
             @click="transition_and_route('/')"

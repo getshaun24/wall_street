@@ -2,7 +2,7 @@
 
 <MainTransition ref="main_tansition"/>
 
-<div>
+<div style="width:100%; overflow:hidden">
 
     <CWSMainHeader/>
 

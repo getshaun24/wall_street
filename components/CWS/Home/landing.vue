@@ -473,7 +473,7 @@ const disabled = ref(false)
         opacity:1
       }
       .landing_left{
-            margin-top:-135%;
+            margin-top:-110%;
             width:100%;
         }
   

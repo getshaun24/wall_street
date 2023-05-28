@@ -111,7 +111,7 @@ function roll(targets, vars, reverse) {
 .wrapperRollingText{
   position:absolute;
   display: flex;
-  margin-top:25%
+  margin-top:25%;
 }
 
 

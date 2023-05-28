@@ -8,6 +8,7 @@
       <video 
             ref="videoRef" 
             muted 
+            playsinline
             class="logo_vid"
             @mouseenter="playVideo"
             @click="transition_and_route('/')"
@@ -16,9 +17,17 @@
   </video>
 
 
+        <div class="menu_paper"></div>
+    </div>
+    <div class="menu_background_bottom">      
+      <div class="menu_paper"></div></div>
 
 
-  <div @click="transition_and_route('/')" class="arrow_button">
+
+  <div class="menu_overlay">
+    <div class="menu_grid">
+
+      <div @click="transition_and_route('/')" class="arrow_button">
        Home
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
@@ -29,15 +38,8 @@
     </div>
 
 
-
-
-
-        <div class="menu_paper"></div>
-    </div>
-    <div class="menu_background_bottom">
-
-      <div @click="transition_and_route('/investments')" class="arrow_button" style="margin-top:-52.5px">
-       investments
+      <div @click="transition_and_route('/investments')" class="arrow_button">
+       Investments
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
 
@@ -51,26 +53,60 @@
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
 
-      
-      <div class="menu_paper"></div></div>
 
-  <div class="burger_container_menu">
-    <div @click="burger_click" :class="{active:burger_active}" class="burger">
-      <span></span>
     </div>
   </div>
 
+
+
+<div class="burger_container_menu" @click="burger_click">
+    <div :class="{active:burger_active}" class="burger">
+      <span></span>
+    </div>
+  </div>
 
 
 </template>
 
 
 <script setup>
-
+import { gsap } from 'gsap'
 const burger_active = ref(false);
+
+
+// Determine if the current device is a mobile
+function isMobile() {
+  return typeof window !== 'undefined' && /Mobi|Android/i.test(window.navigator.userAgent);
+}
+
+// Use is_mobile_var for non-Safari desktop browsers
+const is_mobile_var = isMobile();
+
 
 function burger_click() {
     burger_active.value = !burger_active.value;
+
+    if (burger_active.value == true) {
+        gsap.from('.arrow_button', {
+            opacity: 0,
+            y: 170,
+            duration: .4,
+            stagger: 0.15,
+            ease: 'power2.out',
+            delay: .5
+        });
+
+
+        if (videoRef.value) {
+    videoRef.value.play();
+  }
+      }
+      else{
+        videoRef.value.pause();
+
+      }
+
+      
 }
 
 
@@ -105,6 +141,29 @@ const main_tansition = ref(null);
 
 <style scoped>
 
+.menu_overlay{
+  position: fixed;
+  top:100px;
+  left:0px;
+  height:100vh;
+  z-index:200;
+  width:95%;
+  transform: translateY(v-bind(burger_active ? 0 : '120vw'));
+  opacity: v-bind(burger_active ? 1 : 0);
+  visibility: v-bind(burger_active ? 'visible' : 'hidden');
+  transition:all .3s ease-in-out;
+}
+
+.menu_grid{
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 65px;
+margin-top:15%;
+margin-left:10%
+}
+
 .logo_vid{
     width:200px;
     margin-top:10px;
@@ -135,7 +194,6 @@ const main_tansition = ref(null);
     z-index:0;
     transition:all .5s ease-in-out;
     transform: translateX(v-bind(burger_active ? 0 : '100vw'));
-    /* display: v-bind(burger_active ? 'block' : 'none'); */
 }
 
 
@@ -152,6 +210,8 @@ const main_tansition = ref(null);
     transition:all .5s ease-in-out;
 }
 
+
+
 .menu_paper{
     position: absolute;
   top: 0;
@@ -164,6 +224,7 @@ const main_tansition = ref(null);
   background-image: url("~/assets/content/paper/paper_overlay_3.jpg");
   mix-blend-mode: multiply;
   pointer-events: none;
+  display: v-bind(burger_active ? 'block' : 'none');
 }
 
 
@@ -179,10 +240,14 @@ const main_tansition = ref(null);
 
 
 .burger_container_menu{
-    margin-top:25px;
-    margin-right:50px;
-    margin-left:0%;
-    margin-top:30%
+    margin-top:0px;
+    margin-right:0px;
+    margin-left:-35%;
+    margin-top:10%;
+    z-index:250;
+    padding:15px 10px 10px 20px;
+    cursor: pointer;
+    z-index:350
 }
 
 
@@ -291,14 +356,11 @@ const main_tansition = ref(null);
 .arrow_button{
         padding:5px;
         border-bottom: 2px solid #000;
-        width:285px;
-        font-size:40px;
-        margin-left:10%;
-        margin-top:70px;
+        width:295px;
+        font-size:32px;
         transition: all ease 300ms;
         transition: color .2s ease;
         position: relative;
-      transition: color .2s ease;
       cursor: pointer;
     }
     

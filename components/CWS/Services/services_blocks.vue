@@ -39,7 +39,7 @@
 </div>
 
 <div style="background-color:#449f4f; display:flex; justify-content: center; align-items: center; flex-direction: column;" class="lower_inner_block" data-lag="0.02">
-    <h6 class="block_title_white" style="margin:0">Streamline Your Investments</h6>
+    <h6 class="block_title_white">Streamline Your Investments</h6>
     <p style="color:#fff; width:80%; text-align:center; margin-top:5%">Get your curated information now.</p>
     <div style="margin-left:-10%; margin-top:5%">
     <CWSButtonsSignupLoginButton v-bind="sign_up_props"/>
@@ -139,11 +139,12 @@ grid-row-gap:20px;
 .block_title_white{
     font-size:250%;
     text-align: center;
-    margin-top:25px;
-    margin-left:0px;
-    margin-bottom:70px;
+    margin:0;
     color:#fff
 }
+
+
+
 .block_description{
     font-size:100%;
     text-align: center;
@@ -197,13 +198,16 @@ margin-top:70px
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
 
+    .block_title_white{
+    margin-top:25px;
+}
     .service_blocks{
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 20px;
-margin-bottom:100%;
+margin-bottom:120%;
 width:90%;
 margin-left:5%;
 }

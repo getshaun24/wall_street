@@ -103,7 +103,7 @@ swiper-slide{
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .slide_container{
-    margin-top: 0px;
+    margin-top: 50%;
   }
 }
 

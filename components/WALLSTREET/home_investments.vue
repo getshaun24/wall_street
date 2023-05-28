@@ -10,7 +10,7 @@
         <div @click="nav_to('fund_pages/nano')" class="investment_container">
             <div class="video_container_outer" :style="{ 'background-color': colors[0] }">
                 <div class="video_container_inner">
-                    <video class="video_style" autoplay muted loop>
+                    <video class="video_style" autoplay muted loop playsinline>
                         <source src="~/assets/content/wallstreet/videos/nano_1.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -26,7 +26,7 @@
         <div  @click="nav_to('fund_pages/eco')" class="investment_container">
             <div class="video_container_outer" :style="{ 'background-color': colors[1] }">
                 <div class="video_container_inner">
-                    <video class="video_style" autoplay muted loop>
+                    <video class="video_style" autoplay muted loop playsinline>
                         <source src="~/assets/content/wallstreet/videos/oil_and_gas.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -43,7 +43,7 @@
         <div class="investment_container is_closed">
             <div class="video_container_outer" :style="{ 'background-color': colors[2] }">
                 <div class="video_container_inner">
-                    <video class="video_style" autoplay muted loop ref="videoRef">
+                    <video class="video_style" autoplay muted loop playsinline ref="videoRef">
                         <source ref="videoRef" src="~/assets/content/wallstreet/videos/gww.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -62,7 +62,7 @@
         <div class="investment_container is_closed">
             <div class="video_container_outer" :style="{ 'background-color': colors[3] }">
                 <div class="video_container_inner">
-                    <video ref="videoRef_1" class="video_style" autoplay muted loop>
+                    <video ref="videoRef_1" class="video_style" autoplay muted loop playsinline>
                         <source src="~/assets/content/wallstreet/videos/impossible.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -81,7 +81,7 @@
 <div class="investment_container is_closed">
     <div class="video_container_outer" :style="{ 'background-color': colors[4] }">
         <div class="video_container_inner">
-            <video class="video_style" autoplay muted loop>
+            <video class="video_style" autoplay muted loop playsinline>
                 <source src="~/assets/content/wallstreet/videos/helpful_1.mp4" type="video/mp4">
             </video>
         </div>
@@ -97,7 +97,7 @@
 <div class="investment_container">
     <div class="video_container_outer" :style="{ 'background-color': colors[5] }">
         <div class="video_container_inner">
-            <video class="video_style" autoplay muted loop>
+            <video class="video_style" autoplay muted loop playsinline>
                 <source src="~/assets/content/wallstreet/videos/home_333.mp4" type="video/mp4">
             </video>
         </div>

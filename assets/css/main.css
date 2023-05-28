@@ -115,6 +115,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url("~/assets/content/paper/paper_overlay_3.jpg");
   mix-blend-mode: multiply;
   pointer-events: none;
+
 }
 
 
@@ -444,6 +445,9 @@ color:#000;
 
 @media only screen and (min-width: 0px) and (max-width: 380px) {
 
+  .paperOverlay {
+    display:none
+  }
 
   h1{
     font-size: 1000%;
@@ -575,6 +579,9 @@ font-size: 2.5vw;
 
 @media only screen and (min-width: 380px) and (max-width: 576px) {
 
+  .paperOverlay {
+    display:none
+  }
 
   h1{
     font-size: 1000%;
@@ -694,7 +701,9 @@ font-size: 2.5vw;
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
-  
+    .paperOverlay {
+    display:none
+  }
 
   h1{
     font-size: 1000%;

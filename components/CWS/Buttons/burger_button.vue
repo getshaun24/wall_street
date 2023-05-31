@@ -3,7 +3,7 @@
     <MainTransition ref="main_tansition"/>  
     
 
-    <div class="menu_background_top">
+    <div class="menu_background_top" :style="menuBackgroundTopStyle">
 
       <video 
             ref="videoRef" 
@@ -19,7 +19,7 @@
 
         <div class="menu_paper"></div>
     </div>
-    <div class="menu_background_bottom">      
+    <div class="menu_background_bottom" :style="menuBackgroundBottomStyle">   
       <div class="menu_paper"></div></div>
 
 
@@ -119,6 +119,20 @@ const menuOverlayStyle = computed(() => ({
     }));
 
 
+    // Computed property for menu_background_top
+const menuBackgroundTopStyle = computed(() => ({
+      transform: `translateX(${burger_active.value ? '0' : '100vw'})`,
+      transition: 'all .5s ease-in-out',
+      visibility: `${burger_active.value ? 'visible' : 'hidden'}`
+    }));
+
+// Computed property for menu_background_bottom
+const menuBackgroundBottomStyle = computed(() => ({
+      transform: `translateX(${burger_active.value ? '0' : '-100vw'})`,
+      transition: 'all .5s ease-in-out',
+      visibility: `${burger_active.value ? 'visible' : 'hidden'}`
+    }));
+
 
 
 
@@ -203,7 +217,6 @@ margin-left:10%
     background-color:rgb(255, 255, 255);
     z-index:0;
     transition:all .5s ease-in-out;
-    transform: translateX(v-bind(burger_active ? 0 : '100vw'));
 }
 
 
@@ -215,8 +228,6 @@ margin-left:10%
     height:50vh;
     background-color:rgb(255, 255, 255);
     z-index:90;
-    transform: translateX(v-bind(burger_active ? 0 : '-100vw'));
-    /* display: v-bind(burger_active ? 'block' : 'none'); */
     transition:all .5s ease-in-out;
 }
 

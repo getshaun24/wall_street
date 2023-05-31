@@ -24,7 +24,7 @@
 
 
 
-  <div class="menu_overlay">
+  <div class="menu_overlay" :style="menuOverlayStyle">
     <div class="menu_grid">
 
       <div @click="transition_and_route('/')" class="arrow_button">
@@ -111,6 +111,17 @@ function burger_click() {
 }
 
 
+
+const menuOverlayStyle = computed(() => ({
+      transform: `translateY(${burger_active.value ? '0' : '120vw'})`,
+      opacity: `${burger_active.value ? '1' : '0'}`,
+      visibility: `${burger_active.value ? 'visible' : 'hidden'}`
+    }));
+
+
+
+
+
 const videoRef = ref(null);
 
 const playVideo = () => {
@@ -127,6 +138,7 @@ const pauseVideo = () => {
 
 onMounted(() => {
     videoRef.value.play();
+    burger_active.value = false;
 })
 
 
@@ -149,9 +161,6 @@ const main_tansition = ref(null);
   height:100vh;
   z-index:200;
   width:95%;
-  transform: translateY(v-bind(burger_active ? 0 : '120vw'));
-  opacity: v-bind(burger_active ? 1 : 0);
-  visibility: v-bind(burger_active ? 'visible' : 'hidden');
   transition:all .3s ease-in-out;
 }
 

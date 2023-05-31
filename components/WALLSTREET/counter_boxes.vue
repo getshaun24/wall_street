@@ -166,7 +166,7 @@
     
             .section_1_image_2{
                 background-image: url('~/assets/content/wallstreet/counter_images/counter_6.jpg');
-                background-position: center; 
+                background-position: 50% 10%; 
                 background-repeat: no-repeat;
                 background-size: cover;
                 border-radius:25px;

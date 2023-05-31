@@ -457,7 +457,7 @@ grid-row-gap: 0px;
 }
 
 .col_1{
-    border:rgba(0, 0, 0, 0.15) solid 1px;
+    border-right:rgba(0, 0, 0, 0.15) solid 1px;
     background-color: #ffffff34;
     backdrop-filter: blur(15px);
 }

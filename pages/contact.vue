@@ -16,49 +16,54 @@
 </div>
 
 
+<div class="form_container">
 <div class="grid_container">
 
     <div class="col_1">
         <h4 class="content_title">Contact</h4>
         <div class="contact_info">
-    <p class="contact_elm">404-513-3348</p>
-    <p class="contact_elm">xxx shaun street
-Charleston,<br>South Carolina 29403</p>
-<p class="contact_elm">shaun@thisisget.com</p>
+    <!-- <p class="contact_elm">404-513-3348</p> -->
+    <p class="contact_elm">295 Madison Ave FL 22,<br>New York, NY 10017</p>
+<p class="contact_elm email_contact">michelle@thewallstreetnetwork.com</p>
 </div>
     </div>
     <div class="col_2">
         <h6 class="form_title">Let's Talk.<br>We Are Here For You.</h6>
 
-        <div class="form_input_container">
+
+        <div class="inner_form_grid">
         <input type="text" class="form_input" v-model="first_name" placeholder="First Name">
         <input type="text" class="form_input" v-model="contact_email" placeholder="Email">
-    </div>
-    </div>
-    <div class="col_3">
 
-        <div class="form_input_container">
+
+
         <input type="text" class="form_input" v-model="last_name" placeholder="Last Name">
+
         <div>
         <input ref="phone_focused" @keyup="remove_chrs" @keypress="onPhoneKeyPress" maxlength="17" type="text" class="form_input" v-model="phone" placeholder="Phone">
         <span v-if="show_international" class="international_toggle" @click="international_toggle"> {{ inter_text }}</span>
-        </div>
+    </div>
+    
+
     </div>
 
-        <div class="left_box_line"></div>
-
-</div>
-
-
-    <div class="col_4">
-
-    </div>
-</div>
-
+<div class="form_bottom_container">
 <textarea style="z-index:5" class="form_input_area" placeholder="Message" v-model="message" ></textarea>
 
 <button @click="submit_contact_message" class="submit_button">Submit</button>
 
+</div>
+    </div>
+ 
+
+    
+
+
+
+
+</div>
+
+</div>
 
 
 
@@ -83,14 +88,16 @@ Charleston,<br>South Carolina 29403</p>
         <textarea class="form_input_area" placeholder="Message" v-model="message" ></textarea>
 
         <button @click="submit_contact_message" class="submit_button">Submit</button>
+
+
+        <div class="contact_info">
+    <!-- <p class="contact_elm">404-513-3348</p> -->
+    <p class="contact_elm">295 Madison Ave FL 22,
+        <br>New York, NY 10017</p>
+    <p class="contact_elm">michelle@thewallstreetnetwork.com</p>
+    </div>
     </div>
 
-    <div class="contact_info">
-    <p class="contact_elm">404-513-3348</p>
-    <p class="contact_elm">xxx shaun street
-    Charleston, SC 29403</p>
-    <p class="contact_elm">shaun@thisisget.com</p>
-    </div>
 
 
 
@@ -437,47 +444,48 @@ watch(focused, (focused) => {
 
 .grid_container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "col_1 col_2 col_3 col_4"
-    "col_1 col_2 col_3 col_4"
-    "col_1 col_2 col_3 col_4"
-    "col_1 col_2 col_3 col_4";
+    grid-template-columns: 1fr 3fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
     width: 100vw;
     z-index:1;
     position:absolute;
     top:0;
-    background-color: #ffffff34;
-    backdrop-filter: blur(15px);
-    height:90vh;
-    z-index:5
+    z-index:5;
 
 }
 
 .col_1{
-    grid-area: col_1;
     border:rgba(0, 0, 0, 0.15) solid 1px;
+    background-color: #ffffff34;
+    backdrop-filter: blur(15px);
 }
 
 .col_2{
-    grid-area: col_2;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-    border-right:0;
-    border-left:0
+    background-color: #ffffff34;
+    backdrop-filter: blur(15px);
 }
 
 .col_3{
-    grid-area: col_3;
-    border-left: 0px;
-    border-bottom:rgba(0, 0, 0, 0.15) solid 1px;
+    grid-column: 3 / span 2;
 }
 
-.col_4{
-    grid-area: col_4;
-    border-bottom:rgba(0, 0, 0, 0.15) solid 1px;
+.inner_form_grid{
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin-top:40%;
 }
 
+.form_bottom_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .contact_img_container{
@@ -506,8 +514,8 @@ watch(focused, (focused) => {
 }
 
 .content_title{
-    margin-top:12.5%;
-    margin-left:2.5%;
+    margin-top:40%;
+    margin-left:10%;
     position:absolute;
     font-size:250%
 }
@@ -538,14 +546,13 @@ watch(focused, (focused) => {
 
 .form_input_area{
     border-bottom:#000 solid 1px;
-    margin-top:27%;
+    margin-top:7%;
     color:#000;
     padding:10px;
-    margin-left:27%;
+    margin-left:-2.5%;
     background-color: #18181800;
-    width:45%;
+    width:85%;
     height:75px;
-    position:absolute;
     border:none;
     border-bottom:#000 solid 1px;
     z-index:10
@@ -554,18 +561,18 @@ watch(focused, (focused) => {
 .submit_button{
     background-color: #fff;
     border:#000 solid 1px;
-    margin-top:40%;
+    margin-top:15%;
     color:rgb(0, 0, 0);
     padding:10px;
-    margin-left:27.5%;
+    margin-left:2.5%;
     font-size:25px;
     background-color: #18181800;
     width:45%;
     height:60px;
-    position:absolute;
     cursor:pointer;
     z-index:10;
-    border-radius:100px
+    border-radius:100px;
+    margin-bottom:10%
 }
 
 .submit_button:hover{
@@ -641,6 +648,7 @@ watch(focused, (focused) => {
     margin-top:340px;
     width:75%;
     margin-left:15%;
+    padding-right:10%
     }
 
 
@@ -653,11 +661,14 @@ watch(focused, (focused) => {
 
 
 .contact_elm{
-    color:green
+    color:green;
+    font-size:16px
 }
 
 
-
+.email_contact{
+    font-size:12px
+}
 
 
 
@@ -684,18 +695,20 @@ watch(focused, (focused) => {
 
 .mobile_form_background{
     background-color:#fff;
-    height: 80vh;
     min-height: 510px;
     position: absolute;
     top:0;
     width:60%;
-    z-index:1
+    z-index:1;
+    border:1px solid green;
+    padding-bottom:8%;
+    padding-right:10%
 }
 
 .top_line{
     height:70px;
     background-color:#fff;
-    z-index:50
+    z-index:50;
 }
 
 
@@ -736,34 +749,21 @@ watch(focused, (focused) => {
     font-size:10px;
     width:70%;
     height:20px;
+    position: absolute;
 }
 
 
-.submit_button{
-    margin-top:150px;
-    margin-left:-85%;
-    font-size:11px;
-    width:40%;
-    height:30px;
-    border-radius:50px
-}
-
-.contact_info{
-    margin-top:-190px;
-    width:50%;
-    margin-left:110%;
-    }
 
 
 .contact_elm{
     font-size:12px;
-    color:#fff
+    color:green;
 }
 
 
 .body_video{
-    height:50vh;
-
+    height:35vh;
+    
 }
 
 .contact_video{
@@ -772,14 +772,70 @@ watch(focused, (focused) => {
 
 
 .contact_message{
-    margin-top:100px;
+    margin-top:5%;
+}
+
+.form_container{
+    display: none;
+}
+
+.submit_button{
+    margin-top:150px;
+    margin-left:5%;
+    font-size:11px;
+    width:40%;
+    height:30px;
+    border-radius:50px;
+}
+
 }
 
 
+@media only screen and (min-width: 0px) and (max-width: 387px) {
+    .submit_button{
+    margin-top:30px;
+    margin-left:5%;
+    font-size:11px;
+    width:40%;
+    height:30px;
+    border-radius:50px;
+    position: absolute;
+}
+
+.contact_info{
+    margin-top:55%;
+    width:50%;
+    margin-left:10%;
+    }
 
 }
+
+@media only screen and (min-width: 387px) and (max-width: 576px) {
+    .submit_button{
+    margin-top:150px;
+    margin-left:-85%;
+    font-size:11px;
+    width:40%;
+    height:30px;
+    border-radius:50px;
+    position: absolute;
+}
+
+.contact_info{
+    margin-top:65%;
+    width:50%;
+    margin-left:10%;
+    }
+
+}
+
+
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .form_container{
+    display: none;
+}
   
     .grid_container{
         display:none
@@ -799,12 +855,14 @@ watch(focused, (focused) => {
 
 .mobile_form_background{
     background-color:#fff;
-    height: 80vh;
     min-height: 530px;
     position: absolute;
     top:0;
     width:60%;
-    z-index:1
+    z-index:1;
+    padding-bottom:5%;
+    padding-left:5%;
+    border:green 1px solid
 }
 
 .top_line{
@@ -852,6 +910,7 @@ watch(focused, (focused) => {
     font-size:10px;
     width:70%;
     height:20px;
+    position: absolute;
 }
 
 
@@ -861,25 +920,24 @@ watch(focused, (focused) => {
     font-size:11px;
     width:40%;
     height:30px;
-    border-radius:50px
+    border-radius:50px;
+    position: absolute;
 }
 
 .contact_info{
-    margin-top:-200px;
+    margin-top:55%;
     width:50%;
-    margin-left:110%;
+    margin-left:10%;
     }
 
-
 .contact_elm{
-    font-size:20px;
-    color:#fff
+    font-size:15px;
+    color:green
 }
 
 
 .body_video{
     height:50vh;
-
 }
 
 .contact_video{
@@ -888,7 +946,7 @@ watch(focused, (focused) => {
 
 
 .contact_message{
-    margin-top:100px;
+    margin-top:5%;
 }
 }
 
@@ -901,6 +959,7 @@ watch(focused, (focused) => {
         display:none
     }
 
+
     .top_line{
     height:90px;
     border-bottom:rgba(255, 255, 255, 0.15) solid 1px;
@@ -908,8 +967,8 @@ watch(focused, (focused) => {
 }
 
 .content_title{
-    margin-top:20%;
-    margin-left:2.5%;
+    margin-top:50%;
+    margin-left:10%;
     position:absolute;
     font-size:250%
 }
@@ -936,24 +995,7 @@ watch(focused, (focused) => {
 
 
 
-.form_input_area{
-    margin-top:35%;
-    padding:10px;
-    margin-left:27%;
-    font-size:15px;
-    width:42.5%;
-    height:50px;
-}
 
-
-.submit_button{
-    margin-top:50%;
-    padding:10px;
-    margin-left:27.5%;
-    font-size:15px;
-    width:45%;
-    height:50px;
-}
 
 
 .contact_img{
@@ -962,35 +1004,20 @@ watch(focused, (focused) => {
 }
 
 
-.col_1{
-    grid-area: col_1;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-}
 
-.col_2{
-    grid-area: col_2;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-    border-right:0;
-    border-left:0
-}
-
-.col_3{
-    grid-area: col_3;
-    border-left: 0px;
-}
-
-.col_4{
-    grid-area: col_4;
-}
 
 .contact_info{
-    margin-top:120%;
+    margin-top:150%;
     margin-left:10%;
     }
 
     .contact_elm{
-    font-size:18px;
-    color:#000
+    font-size:16px;
+    color:green
+}
+
+.email_contact{
+    font-size:10px
 }
 
 
@@ -1015,8 +1042,10 @@ watch(focused, (focused) => {
     height:50vh;
     margin-top:100%;
 }
+.inner_form_grid{
 
-
+margin-top:50%;
+}
 
 }
 
@@ -1025,24 +1054,6 @@ watch(focused, (focused) => {
         display:none
     }
 
-    .form_input_area{
-    margin-top:25%;
-    padding:10px;
-    margin-left:27%;
-    width:42.5%;
-    height:75px;
-}
-
-.submit_button{
-    margin-top:40%;
-    padding:10px;
-    margin-left:27.5%;
-    font-size:25px;
-    background-color: #18181800;
-    width:45%;
-    height:80px;
-    background-color: #fff;
-}
 
 
 
@@ -1052,27 +1063,12 @@ watch(focused, (focused) => {
   left:-40%;
 }
 
-.col_1{
-    grid-area: col_1;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
+
+.inner_form_grid{
+
+margin-top:30%;
 }
 
-.col_2{
-    grid-area: col_2;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-    border-right:0;
-    border-left:0
-}
-
-.col_3{
-    grid-area: col_3;
-    border-left: 0px;
-}
-
-.col_4{
-    grid-area: col_4;
-    background-color: #18181800;
-}
 
 
 
@@ -1083,41 +1079,9 @@ watch(focused, (focused) => {
         display:none
     }
 
+    .inner_form_grid{
 
-.col_1{
-    grid-area: col_1;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-}
-
-.col_2{
-    grid-area: col_2;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-    border-right:0;
-    border-left:0
-}
-
-.col_3{
-    grid-area: col_3;
-    border-left: 0px;
-}
-
-.form_input_area{
-    margin-top:27%;
-    padding:10px;
-    margin-left:27%;
-    width:42.5%;
-    height:75px;
-}
-
-.submit_button{
-    margin-top:42.5%;
-    padding:10px;
-    margin-left:27.5%;
-    font-size:25px;
-    background-color: #18181800;
-    width:45%;
-    height:80px;
-    background-color: #fff;
+margin-top:30%;
 }
 
 
@@ -1144,22 +1108,6 @@ watch(focused, (focused) => {
         display:none
     }
 
-    .col_1{
-    grid-area: col_1;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-}
-
-.col_2{
-    grid-area: col_2;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-    border-right:0;
-    border-left:0
-}
-
-.col_3{
-    grid-area: col_3;
-    border-left: 0px;
-}
 
 .contact_message{
     margin-top:10%;
@@ -1169,7 +1117,10 @@ watch(focused, (focused) => {
     height:110vh;
 
 }
+.inner_form_grid{
 
+margin-top:25%;
+}
 
 }
 
@@ -1178,31 +1129,12 @@ watch(focused, (focused) => {
         display:none
     }
 
-    .col_1{
-    grid-area: col_1;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-}
 
-.col_2{
-    grid-area: col_2;
-    border:rgba(0, 0, 0, 0.15) solid 1px;
-    border-right:0;
-    border-left:0
-}
 
-.col_3{
-    grid-area: col_3;
-    border-left: 0px;
-}
+    .inner_form_grid{
 
-.form_input_area{
-    margin-top:29.5%;
-    padding:10px;
-    margin-left:27%;
-    width:42.5%;
-    height:75px;
+margin-top:20%;
 }
-
 
 .contact_video{
     width:45%;

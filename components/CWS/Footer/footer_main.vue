@@ -193,6 +193,34 @@ margin-top:-50px
 }
 
 
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .logo_vid{
+width:90%
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .logo_vid{
+width:90%
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 5600px) {
+}
+
+
 
 
 </style>

@@ -86,6 +86,7 @@ const is_mobile_var = isMobile();
 function burger_click() {
     burger_active.value = !burger_active.value;
 
+    //animate buttons
     if (burger_active.value == true) {
         gsap.from('.arrow_button', {
             opacity: 0,

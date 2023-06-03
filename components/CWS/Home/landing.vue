@@ -9,7 +9,7 @@
         
                             <CWSButtonsSlideButton button_text="Sign Up"/>
         
-                            <p class="landing_text">The Wall Street Network aims to empower investors, professionals, and stakeholders in the private equity industry by providing them with access to valuable information and insights, enabling them to make informed investment decisions and stay ahead of market trends.
+                            <p class="landing_text">With unrivaled access to private equity industry information, The Wall Street Network empowers investors, professionals, and stakeholders by providing them with access to valuable information and insights. Now <i>you</i> can make informed decisions and stay ahead of the market trends.
 </p>
         
         
@@ -36,7 +36,7 @@
                               </div>
                               <div>
                                 <img :class="{ landing_image_3_anim: disabled }" class="landing_image_3" src="~/assets/content/wallstreet/home/home_5.jpg">
-                                <p :class="{ image_text_3_anim: disabled }" class="image_text_3">You Are Here</p>
+                                <p :class="{ image_text_3_anim: disabled }" class="image_text_3">... We Are Here</p>
                               </div>
                               </div>                        
                                 </div>
@@ -80,7 +80,7 @@
 
 
                             <div class="landing_left">
-                              <div style="margin-top:0%">
+                              <div class="margin_left">
                             <h4 class="landing_title">Empower Your<br>Portfolio Today.</h4>
         
         
@@ -349,7 +349,7 @@ const disabled = ref(false)
         .landing_text{
         margin-top:30px;
         width:80%;
-        font-size:110%
+        font-size:110%;
         }
         
         
@@ -423,6 +423,9 @@ const disabled = ref(false)
     transform: scale(1.15);
 }
 
+.margin_left{
+  margin-top:0%
+}
 
 
 @media only screen and (min-width: 0px) and (max-width: 475px) {
@@ -476,8 +479,17 @@ const disabled = ref(false)
             margin-top:-110%;
             width:100%;
         }
-  
+
+
 }
+
+@media only screen and (min-width: 0px) and (max-width: 340px) {
+.landing_text{
+        margin-bottom:160%;
+        width:95%;
+        }
+      }
+
 
 
 @media only screen and (min-width: 475px) and (max-width: 576px) {
@@ -527,11 +539,13 @@ const disabled = ref(false)
         border-radius:15px;
         opacity:1
       }
-      .landing_left{
-            margin-top:-105%;
-            width:100%;
-        }
-  
+
+      .margin_left{
+  margin-top:-100%
+}
+
+
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -591,6 +605,11 @@ const disabled = ref(false)
 
 .landing_title{
           margin-top:22%
+        }
+
+        .landing_text{
+        margin-bottom:180%;
+        width:95%;
         }
 
    

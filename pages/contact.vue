@@ -1034,13 +1034,13 @@ margin-top:40%;
 
 
 .contact_message{
-    margin-top:15%;
+    margin-top:5%;
 }
 
 
 .body_video{
-    height:50vh;
-    margin-top:100%;
+    height:40vh;
+    margin-top:250%;
 }
 .inner_form_grid{
 

@@ -68,8 +68,8 @@
 
 <div class="section_3_container">
 <p class="section_3_title">Widespread Applications</p>
-<h5 class="section_3_text">The total addressable markets to NanoCarbon is over $11.1 Billion. With major commercial contracts imminent, now is the time to get involved.</h5>
-<p class="section_3_info_text">NanoCarbon is actively engaged in some of the world's largest and most profitable industries. In each of its primary business sectors, NanoCarbon has successfully navigated the qualification process with top-tier suppliers and manufacturers. Consistency has been a hallmark of their work, with NanoCarbon providing high-quality nanocarbon solutions at market-competitive rates. The companies currently in advanced discussions with NanoCarbon, listed adjacent, are poised to transition into the commercialization phase, each representing a potential multimillion-dollar revenue opportunity.
+<h5 class="section_3_text">The total addressable markets to Nanocarbon is over $11.1 Billion. With major commercial contracts imminent, now is the time to get involved.</h5>
+<p class="section_3_info_text">Nanocarbon is actively engaged in some of the world's largest and most profitable industries. In each of its primary business sectors, NanoCarbon has successfully navigated the qualification process with top-tier suppliers and manufacturers. Consistency has been a hallmark of their work, with NanoCarbon providing high-quality nanocarbon solutions at market-competitive rates. The companies currently in advanced discussions with Nanocarbon, listed adjacent, are poised to transition into the commercialization phase, each representing a potential multimillion-dollar revenue opportunity.
 
 </p>
 </div>
@@ -111,7 +111,7 @@
 
     <div class="sector_container_4">
         <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
-        <p data-speed=".9" class="sector_text_4">GET Resources Group is our premium custodian for this fund.</p>
+        <p data-speed=".9" class="sector_text_4">GET Resources group is our #1 point of contact for this fund.</p>
         <div data-speed=".85">
         <CWSButtonsButtonLoop class="sector_margin"/>
         </div>

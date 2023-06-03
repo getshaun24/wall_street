@@ -1,7 +1,7 @@
 <template>
 
     <h6 class="more_investments">More Investments</h6>
-    <p class="investment_text">NanoCarbon is a revolutionary name in the field of nanotechnology, harnessing the extraordinary properties of carbon at the nanoscale to redefine the realms of electronics and energy. Their patented technology transforms the production of high-quality graphene and carbon nanotubes, making it possible to create smaller, faster, and more efficient electronic devices. Moreover, NanoCarbon's breakthroughs in enhancing solar cell efficiency and battery storage capacity are pushing the boundaries of sustainable energy. Their work isn't just inventive; it's the harbinger of a new era in technological innovation and environmental sustainability.</p>
+    <p class="investment_text">The fund’s nanocarbon target is a revolutionary player in the field of nanocarbon engineering and application. They harness the extraordinary properties of carbon at the nanoscale to dramatically improve core components/materials in the electronics and energy sectors, among others. Their patented technology advances the engineering and production of high-quality fullerenes and carbon nanotubes, createing smaller, faster, and more efficient electronic devices. Moreover, our fund expects to take part in the company’s breakthroughs in enhancing solar cell efficiency and battery storage capacity which are pushing the boundaries of sustainable energy. Their work isn't just inventive; it's the harbinger of a new era in technological innovation and environmental sustainability.</p>
     
     <div class="all_investments_container">
 

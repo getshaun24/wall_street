@@ -7,7 +7,7 @@
               <div class="footer_grid_left">
                 <div class="footer_elm_left">
                   <h5 style="margin:0">Fund Insights</h5>
-                  <span class="footer_subheading">Curated. For You.</span>
+                  <span class="footer_subheading">Curated. For <i>You.</i></span>
                 </div>
 
                 <video 
@@ -209,6 +209,7 @@ margin-left:-10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

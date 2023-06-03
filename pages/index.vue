@@ -55,7 +55,7 @@
     <div class="text_box_1" data-speed="1.65">
         <div class="icon_1 icons"><div class="icon_box">Aggregate Information<img class="icon_img" src="~/assets/content/homepage/home_15.png"></div></div>
     <h3 class="sticky_title_text">Concise, curated insights from the private equity landscape</h3>
-    <p class="body_text">Wall Street Network (WSN) serves as a hub for insightful data from the private equity realm. Through comprehensive data aggregation, it gathers and curates critical information from diverse sources, providing a concise overview of private equity firms and their investment deals. This approach aids in presenting a broad, detailed, and user-friendly perspective of the private equity ecosystem.</p>
+    <p class="body_text">The Wall Street Network (WSN) is a hub for insightful data in the Private Equity realm. Through comprehensive data aggregation, WSN obtains and curates info from diverse sources providing a concise overview of private equity firms and their offerings. The Wall Street Network helps present a broad perspective, a detailed one, and boasts a user-friendly environment within the PE landscape.</p>
 </div>
 
 <div class="text_box_2" data-speed="1.65">
@@ -412,15 +412,15 @@ margin-left:7.5%
 
 
 .text_box_2{
-    margin-top:30vh
+    margin-top:20vh
 }
 
 .text_box_3{
-    margin-top:25vh
+    margin-top:20vh
 }
 
 .text_box_4{
-    margin-top:25vh
+    margin-top:20vh
 }
 
 .icons{

@@ -1,11 +1,13 @@
 <template>
 
-    <a class="arrow_button" href="https://thisisget.com/">
+    <a class="arrow_button" :href="link_url">
         Visit Website<img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </a>
     </template>
     
     <script setup>
+
+    const props = defineProps(['link_url'])
     
     </script>
     

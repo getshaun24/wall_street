@@ -22,7 +22,10 @@
 </video>
 
 <div class="footer_elm_left" style="padding-top:3px">
+  <div class="flex_box">
+                      <span class="footer_subheading bottom_button" @click="transition_and_route('/privacy')">Privacy Policy</span>
                     <span class="footer_subheading">Copyright © The Wallstreet Network 2021</span>
+                  </div>
                   </div>
               </div>
 
@@ -64,8 +67,8 @@ onMounted(() => {
 
 footer{
 z-index:-1;
-bottom:0;
-  margin-top:calc(-1 * (100vh - 405px));
+bottom:0px;
+margin-top:calc(-1 * (100vh - 405px));
 }
 .footer{
   background-color: #fff;
@@ -74,13 +77,21 @@ bottom:0;
   z-index:1;
   border-top: 3px solid green;
   position: fixed;
-  bottom:0;
-  margin-top:-100vh
+  bottom:0px;
+  margin-top:-100vh;
 }
 
 
 
 
+.bottom_button{
+  cursor:pointer;
+  margin-right:100%;
+  text-decoration: underline !important;
+  text-decoration-color: green !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
 
 
 
@@ -98,6 +109,13 @@ white-space: nowrap;
 color: var(--theme-color) !important;
 }
 
+.flex_box{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+margin-top:-20px;
+}
+
 .footer_elm_right{
 padding:25px;
 white-space: nowrap;
@@ -106,8 +124,8 @@ color: var(--theme-color) !important
 
 .footer_subheading{
 white-space: nowrap;
-color: var(--footer_subheading) !important;
-text-decoration: none !important;
+color: var(--footer_subheading);
+text-decoration: none;
 line-height:2.5
 }
 

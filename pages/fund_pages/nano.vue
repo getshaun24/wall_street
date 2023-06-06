@@ -42,7 +42,7 @@
             <br>
             <div class="is_mobile">
             <p class="get_info is_mobile">This fund is offered GET Resources Group. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
-            <CWSButtonsButtonLoop/>
+            <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
     </div>
 
@@ -52,7 +52,7 @@
 
         <div class="is_not_mobile">
         <p class="get_info is_not_mobile">This fund is offered GET Resources Group. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
-        <CWSButtonsButtonLoop/>
+        <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
 
         </div>
@@ -113,7 +113,7 @@
         <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
         <p data-speed=".9" class="sector_text_4">GET Resources group is our #1 point of contact for this fund.</p>
         <div data-speed=".85">
-        <CWSButtonsButtonLoop class="sector_margin"/>
+        <CWSButtonsButtonLoop :link_url="link_to_url" class="sector_margin"/>
         </div>
     </div>
 
@@ -234,6 +234,9 @@ gsap.from('.sector_container_1', {
 })
 })
 
+
+
+const link_to_url = "https://thisisget.com/fund_pages/nano"
 
     
     </script>

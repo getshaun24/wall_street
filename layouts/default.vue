@@ -14,6 +14,8 @@
     </div>
     <div class="plaid_blur" v-if="plaidBlur"></div>
   </Teleport>
+
+  <WALLSTREETPrivacyBanner />
 </template>
 
 <script setup>

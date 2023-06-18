@@ -1,6 +1,6 @@
 <template>
 
-    <a class="arrow_button" :href="link_url">
+    <a class="arrow_button cursor_hover" :href="link_url">
         Visit Website<img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </a>
     </template>
@@ -22,7 +22,6 @@
         transition: all ease 5s;
         transition: color .2s ease;
         position: relative;
-      cursor: pointer;
       color:#fff
     }
     

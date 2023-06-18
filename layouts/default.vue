@@ -1,5 +1,6 @@
 <template>
   <div>
+    <WALLSTREETCustomCursor />
     <slot></slot>
   </div>
   <Teleport to="body" v-if="!sitePasswordSesh">

@@ -72,6 +72,7 @@ body{
     /* background-color: #fafdff; */
     overflow-x: hidden;
     scrollbar-width: none;
+    cursor: none;
 }
 
 
@@ -89,6 +90,7 @@ html{
   /* for firefox */
   scrollbar-width: none;
   font-family: "SF Pro Text", sans-serif;
+  cursor: none;
 }
 
 /* 

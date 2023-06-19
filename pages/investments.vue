@@ -18,6 +18,23 @@
 
 
 
+<div @click="nav_to('fund_pages/next_ai')" class="investment_container">
+    <div class="video_container_outer" :style="{ 'background-color': colors[0] }">
+        <div class="video_container_inner">
+            <video class="video_style" autoplay muted loop playsinline>
+                <source src="~/assets/content/wallstreet/fund_pages/next_ai/next_vid_square.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="title_container">
+            <h6 class="investment_title" :style="{ 'color': colors[1] }">NEXT AI Fund</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[1] }">NEXT AI Fund</h6>
+        </div>
+            <p class="insvestment_subtitle">A Collection of The Best</p>
+        </div>
+
+
+
 <div @click="nav_to('fund_pages/nano')" class="investment_container">
     <div class="video_container_outer" :style="{ 'background-color': colors[0] }">
         <div class="video_container_inner">
@@ -49,6 +66,8 @@
     <p class="insvestment_subtitle">Oil & Gas Revitalization</p>
 </div>
 
+
+<div class="investment_container"></div>
 
 
 <div class="investment_container is_closed">
@@ -86,7 +105,6 @@
 </div>
 
 
-<div class="investment_container"></div>
 
 
 <div class="investment_container is_closed">
@@ -105,6 +123,11 @@
 </div>
 
 
+
+<!-- 
+<div class="investment_container"></div>
+
+
 <div class="investment_container">
 <div class="video_container_outer" :style="{ 'background-color': colors[5] }">
 <div class="video_container_inner">
@@ -120,7 +143,7 @@
 <p class="insvestment_subtitle">Invest In The Future</p>
 </div>
 
-
+ -->
 
 
 

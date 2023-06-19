@@ -1,7 +1,7 @@
 <template>
 
     <h6 class="more_investments">More Investments</h6>
-    <p class="investment_text">The fund’s nanocarbon target is a revolutionary player in the field of nanocarbon engineering and application. They harness the extraordinary properties of carbon at the nanoscale to dramatically improve core components/materials in the electronics and energy sectors, among others. Their patented technology advances the engineering and production of high-quality fullerenes and carbon nanotubes, createing smaller, faster, and more efficient electronic devices. Moreover, our fund expects to take part in the company’s breakthroughs in enhancing solar cell efficiency and battery storage capacity which are pushing the boundaries of sustainable energy. Their work isn't just inventive; it's the harbinger of a new era in technological innovation and environmental sustainability.</p>
+    <p class="investment_text">Pioneering a unique investment opportunity, GET Resources is delving into the coveted AI sector. The company leverages its seasoned team's AI expertise to identify lucrative opportunities in this dynamic and disruptive field. Their strategy encompasses all aspects of the AI stack, from hardware and platform to application, ensuring a robust ecosystem. Unlike competitors, GET Resources' industry-wide connections extend beyond well-known names, promising unmatched investment insights.</p>
     
     <div class="all_investments_container">
 
@@ -9,19 +9,19 @@
         <div class="investment_container"></div>
 
 
-        <div  @click="nav_to('/fund_pages/nano')" class="investment_container">
+        <div  @click="nav_to('/fund_pages/next_ai')" class="investment_container">
             <div class="video_container_outer" :style="{ 'background-color': colors[1] }">
                 <div class="video_container_inner">
                     <video class="video_style" autoplay muted loop playsinline>
-                        <source src="~/assets/content/wallstreet/videos/nano_1.mp4" type="video/mp4">
+                        <source src="~/assets/content/wallstreet/fund_pages/next_ai/next_vid_square.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
             <div class="title_container">
-            <h6 class="investment_title" :style="{ 'color': colors[1] }">Nano Carbon</h6>
-            <h6 class="investment_title" :style="{ 'color': colors[1] }">Nano Carbon</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[1] }">NEXT AI Fund</h6>
+            <h6 class="investment_title" :style="{ 'color': colors[1] }">NEXT AI Fund</h6>
         </div>
-            <p class="insvestment_subtitle">The Next Generation of Superconductors</p>
+            <p class="insvestment_subtitle">A Collection of The Best</p>
         </div>
     
 

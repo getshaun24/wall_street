@@ -19,6 +19,7 @@
 <script setup>
 import { ref, watchEffect, onBeforeMount, onMounted, defineExpose } from 'vue';
 
+
 function sleep (time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
@@ -42,6 +43,7 @@ watchEffect(() => {
 })
 
 function animation_and_route(route_to){
+
   transition_display.value = true
   transition_open_display.value = true
   sleep(1).then(() => {transition_open.value = true})

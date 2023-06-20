@@ -10,7 +10,7 @@
           <span class="currency">$</span>
           <span class="amount">Free</span>
         </div>
-        <button @click="open_popup_modal()" class="start_button">Get Started</button>
+        <button @click="open_popup_modal()" class="start_button cursor_hover">Get Started</button>
       </div>
       <!-- <div class="card" style="margin-top:100px">
         <h6 class="title">Monthly Insight Plan</h6>
@@ -169,7 +169,6 @@ grid-row-gap: 40px;
     margin-top:25px;
     border-radius:100px;
     border:#fff solid 0px;
-    cursor:pointer;
     font-size:25px;
     line-height:40px;
     color:#fff;

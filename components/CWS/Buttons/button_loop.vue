@@ -22,7 +22,8 @@
         transition: all ease 5s;
         transition: color .2s ease;
         position: relative;
-      color:#fff
+      color:#fff;
+      cursor: none;
     }
     
     .arrow{

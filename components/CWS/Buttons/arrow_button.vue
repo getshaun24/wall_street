@@ -2,7 +2,7 @@
 
 <WALLSTREETEmailModal ref="open_it"/>
 
-<div @click="open_popup_modal()" class="arrow_button">
+<div @click="open_popup_modal()" class="arrow_button cursor_hover">
     Act Now <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
 </div>
 </template>
@@ -31,7 +31,6 @@ function open_popup_modal() {
     transition: color .2s ease;
     position: relative;
   transition: color .2s ease;
-  cursor: pointer;
 }
 
 .arrow{

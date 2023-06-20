@@ -50,7 +50,7 @@
 <div class="form_bottom_container">
 <textarea style="z-index:5" class="form_input_area" placeholder="Message" v-model="message" ></textarea>
 
-<button @click="submit_contact_message" class="submit_button">Submit</button>
+<button @click="submit_contact_message" class="submit_button cursor_hover">Submit</button>
 
 </div>
     </div>
@@ -87,7 +87,7 @@
         <span v-if="show_international" class="international_toggle" @click="international_toggle"> {{ inter_text }}</span>
         <textarea class="form_input_area" placeholder="Message" v-model="message" ></textarea>
 
-        <button @click="submit_contact_message" class="submit_button">Submit</button>
+        <button @click="submit_contact_message" class="submit_button cursor_hover">Submit</button>
 
 
         <div class="contact_info">
@@ -569,10 +569,10 @@ margin-top:40%;
     background-color: #18181800;
     width:45%;
     height:60px;
-    cursor:pointer;
     z-index:10;
     border-radius:100px;
-    margin-bottom:10%
+    margin-bottom:10%;
+    cursor:none;
 }
 
 .submit_button:hover{

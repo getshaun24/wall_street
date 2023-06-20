@@ -14,7 +14,7 @@
         <div 
           @click="selectRandomString" 
           ref="buttonElement" 
-          class="buttonElement" 
+          class="buttonElement cursor_hover" 
         >
           Investments
         </div>
@@ -99,7 +99,6 @@
     position: absolute;
     border: 2px solid #000;
     border-radius: 50px;
-    cursor: pointer;
     padding: 3px;
     width: 100px;
     text-align: center;

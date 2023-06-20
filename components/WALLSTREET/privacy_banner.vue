@@ -2,8 +2,8 @@
     
 
 <div v-if="privacy_banner_show" class="banner_box">
- <p class="privacy_text">You must agree to be bound by the terms of our Privacy Policy to use our site. We also use cookies to ensure our site runs smoothly. Our Privacy Policy can be found <span @click="navigateTo('/privacy')" style="color:green; cursor:pointer">here</span>. Last updated June 5, 2023.</p>
- <div @click="privacy_banner_toggle" class="agree_button">Agree</div>
+ <p class="privacy_text">You must agree to be bound by the terms of our Privacy Policy to use our site. We also use cookies to ensure our site runs smoothly. Our Privacy Policy can be found <span @click="navigateTo('/privacy')" style="color:green;" class="cursor_hover">here</span>. Last updated June 5, 2023.</p>
+ <div @click="privacy_banner_toggle" class="agree_button cursor_hover">Agree</div>
 </div>
 
 </template>
@@ -66,7 +66,6 @@ function privacy_banner_toggle(){
     color:#fff;
     background-color:green;
     border-radius:10px;
-    cursor: pointer;
 }
 
 .agree_button:hover{

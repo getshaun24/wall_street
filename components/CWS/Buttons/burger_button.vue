@@ -27,28 +27,28 @@
   <div class="menu_overlay" :style="menuOverlayStyle">
     <div class="menu_grid">
 
-      <div @click="transition_and_route('/')" class="arrow_button">
+      <div @click="transition_and_route('/')" class="arrow_button cursor_hover">
        Home
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
 
-    <div @click="transition_and_route('/services')" class="arrow_button">
+    <div @click="transition_and_route('/services')" class="arrow_button cursor_hover">
        Services
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
 
 
-      <div @click="transition_and_route('/investments')" class="arrow_button">
+      <div @click="transition_and_route('/investments')" class="arrow_button cursor_hover">
        Investments
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
 
-    <div @click="transition_and_route('/contact')" class="arrow_button">
+    <div @click="transition_and_route('/contact')" class="arrow_button cursor_hover">
        Contact
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
 
-    <div @click="transition_and_route('/login_pages/login')" class="arrow_button">
+    <div @click="transition_and_route('/login_pages/login')" class="arrow_button cursor_hover">
        Login
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
@@ -59,7 +59,7 @@
 
 
 
-<div class="burger_container_menu" @click="burger_click">
+<div class="burger_container_menu cursor_hover" @click="burger_click">
     <div :class="{active:burger_active}" class="burger">
       <span></span>
     </div>

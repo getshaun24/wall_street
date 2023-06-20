@@ -89,39 +89,42 @@
   <div class='container'>
     <div class='cards'>
         
-    <div class='card' style='top:40px'>
-        <div class="cardPaperOverlay"></div>
-        <img class="card_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_logo_1.png">
-        <h6 class="card_title">MidJourney</h6>
-        <p class="card_text">Midjourney AI is a groundbreaking generative artificial intelligence service, specializing in creating vivid images from natural language prompts, making it a powerful tool for artists, advertisers, and content creators alike. Since its launch in 2022, it has continuously evolved, with various versions offering enhanced capabilities and opening new horizons in content creation and advertising​.  </p>
-    </div>
 
-    <div class='card' style='top:50px'>
+    <div class='card' style='top:40px'>
         <div class="cardPaperOverlay"></div>
         <img class="card_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_logo_2.png">
         <h6 class="card_title">Open AI</h6>
         <p class="card_text">OpenAI is a leading artificial intelligence research lab consisting of both for-profit and non-profit arms. It focuses on ensuring artificial general intelligence (AGI) benefits all of humanity by building safe and beneficial AGI directly, while also striving to aid others in achieving these outcomes. OpenAI's advanced AI models, like ChatGPT, transform the way we interact with technology, offering applications from writing assistance to education, gaming, and beyond.  </p>
     </div>
 
+    <div class='card' style='top:50px'>
+        <div class="cardPaperOverlay"></div>
+        <img class="card_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_logo_1.png">
+        <h6 class="card_title">MidJourney</h6>
+        <p class="card_text">Midjourney, a San Francisco-based AI company, has created a unique generative AI program that transforms text prompts into images, akin to OpenAI's DALL-E. Under the leadership of David Holz, co-founder of Leap Motion, the company entered open beta in July 2022 and has been profitably operating while continuously enhancing its algorithms. The platform is currently accessible via a Discord bot, with plans for a web interface in progress. Artists use Midjourney for rapid prototyping of concepts, and industries like advertising leverage it for efficient content creation.  </p>
+    </div>
+
     <div class='card' style='top:60px'>
         <div class="cardPaperOverlay"></div>
         <img class="card_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_logo_3.png">
         <h6 class="card_title">Anthropic</h6>
-        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p class="card_text">Anthropic is an AI startup, founded by former OpenAI researchers, specializing in developing general AI systems and language models like its chatbot, Claude. It's currently working on a "frontier model", a next-gen algorithm for AI self-teaching, with plans to invest billions in the development of this technology, which is anticipated to automate large portions of the economy. With high-profile investors such as Google, Anthropic is positioning itself as a major player in the AI field, ready to compete with established organizations like OpenAI
+ </p>
     </div>
 
     <div class='card' style='top:70px'>
         <div class="cardPaperOverlay"></div>
         <img class="card_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_logo_4.png">
         <h6 class="card_title">Runway ML</h6>
-        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p class="card_text">Runway ML is a pioneering company in the realm of artificial intelligence, Runway ML is enhancing the field with its user-friendly and innovative approaches. Founded by the visionary Cristóbal Valenzuela, Runway ML has made a name for itself by developing a platform that empowers creators by providing them with easy access to machine learning models. The company's software is designed to be user-friendly, with a focus on delivering complex AI technologies in a way that is accessible to a wide audience, enabling them to interact and create with AI without needing a background in coding. One of their notable offerings is their 5.1 model which has shown proficiency in working better with more literal prompts.
+</p>
     </div>
 
     <div class='card' style='top:80px'>
         <div class="cardPaperOverlay"></div>
         <img class="card_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_logo_6.png">
         <h6 class="card_title">Nano-C</h6>
-        <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p class="card_text">Nano-C is a pioneering company in nanocarbon engineering, directly impacting the field of computing in general and AI specifically. Their high-quality fullerenes and carbon nanotubes enable the creation of smaller, faster, and more energy-efficient electronic devices, step-wise elevating current computational capabilities. Further, Nano-C's breakthroughs in solar cell efficiency and battery storage also contribute to sustainable energy solutions, aligning with the demand for environmentally friendly technologies in AI and computing.</p>
     </div>
 
     <div class='card' style='top:90px'>
@@ -395,7 +398,7 @@ gsap.from('.sector_container_1', {
 
 
 
-const link_to_url = "https://thisisget.com/fund_pages/nano"
+const link_to_url = "https://thisisget.com/fund_pages/next_ai/"
 
     
     </script>
@@ -909,7 +912,7 @@ margin-bottom:40px
   }
   
   .card {
-    height: 500px;
+    height: 520px;
     margin-bottom: 50px;
     background: white;
     font-size: 36px;

@@ -2,7 +2,7 @@
 
 <MainTransition ref="main_tansition"/>  
     
-    <div @click="transition_and_route(link_to)" class="arrow_button">
+    <div @click="transition_and_route(link_to)" class="arrow_button cursor_hover">
         {{ button_text }}
     <img class="arrow" src="https://uploads-ssl.webflow.com/62d51dedb3f501ad1d54047c/62fa0319dac3955065e9a8b0_button_arrow.svg" loading="lazy" alt="" />
     </div>
@@ -35,7 +35,6 @@
         transition: color .2s ease;
         position: relative;
       transition: color .2s ease;
-      cursor: pointer;
     }
     
     .arrow{

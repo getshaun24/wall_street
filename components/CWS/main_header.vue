@@ -8,7 +8,7 @@
             ref="videoRef" 
             muted 
             playsinline
-            class="logo_vid"
+            class="logo_vid cursor_hover"
             @mouseenter="playVideo"
             @click="transition_and_route('/')"
         >
@@ -18,9 +18,9 @@
 
     <div class="menu_items">
         <!-- <div @click="transition_and_route('/')" class="menu_item">Home</div> -->
-        <div @click="transition_and_route('/services')" class="menu_item">Services</div>
-        <div @click="transition_and_route('/investments')" class="menu_item">Investments</div>
-        <div @click="transition_and_route('/contact')" class="menu_item">Contact</div>
+        <div @click="transition_and_route('/services')" class="menu_item cursor_hover">Services</div>
+        <div @click="transition_and_route('/investments')" class="menu_item cursor_hover">Investments</div>
+        <div @click="transition_and_route('/contact')" class="menu_item cursor_hover">Contact</div>
         <!-- <CWSButtonsSignupLoginButton style="margin-left:7%" v-bind="sign_up_props"/> -->
         <CWSButtonsSignupLoginButton style="margin-left:7%; margin-top:-15px" v-bind="login_props"/>
     </div>
@@ -33,7 +33,7 @@
             ref="videoRef_1" 
             muted 
             playsinline
-            class="logo_vid"
+            class="logo_vid cursor_hover"
             @mouseenter="playVideo"
             @click="transition_and_route('/')"
         >
@@ -136,7 +136,6 @@ onMounted(() => {
     border-radius: 50px;
     width:120px;
     text-align: center;
-    cursor: pointer;
     height:20px;
     /* margin:0px 1%; */
     color:#000;
@@ -159,7 +158,6 @@ onMounted(() => {
     width:200px;
     margin-top:10px;
     margin-left:10px;
-    cursor:pointer;
     border-radius:10px
 }
 

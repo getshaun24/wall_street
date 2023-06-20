@@ -6,7 +6,7 @@
     ref="buttonContainer"
     @mousemove="handleMouseMove"
     @mouseleave="resetButtonPosition"
-    class="button-container"
+    class="button-container cursor_hover"
   >
     <div 
       @click="transitionAndRoute(link_to)"
@@ -78,7 +78,6 @@ function open_popup_modal() {
 .button-element {
   border: 2px solid green;
   border-radius: 50px/50px;
-  cursor: pointer;
   padding: 4px 20px;
   width: 100px;
   position: absolute;

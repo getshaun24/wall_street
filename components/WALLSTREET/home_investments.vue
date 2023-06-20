@@ -228,9 +228,6 @@ margin-left:10%;
 margin-top:40%;
 margin-bottom:-10%
 }
-.investment_container{
-    cursor: pointer;
-}
 
 .video_container_outer {
     display: flex;
@@ -406,7 +403,8 @@ margin-bottom:-10%
     width:90%
 }
 .investment_title{
-    font-size:40px
+    font-size:40px;
+    margin-top:20px;
 }
 }
 
@@ -425,7 +423,8 @@ margin-bottom:-10%
 }
 
 .investment_title{
-    font-size:50px
+    font-size:50px;
+    margin-top:15px;
 }
 }
 

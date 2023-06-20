@@ -9,7 +9,7 @@
         <div class="investment_container"></div>
 
 
-        <div  @click="nav_to('/fund_pages/eco')" class="investment_container">
+        <div  @click="nav_to('/fund_pages/eco')" class="investment_container cursor_hover">
             <div class="video_container_outer" :style="{ 'background-color': colors[1] }">
                 <div class="video_container_inner">
                     <video class="video_style" autoplay muted loop playsinline>
@@ -123,9 +123,6 @@ grid-row-gap: 250px;
 width:60%;
 margin-left:20%;
 margin-top:-40%
-}
-.investment_container{
-    cursor: pointer;
 }
 
 .video_container_outer {
@@ -366,7 +363,8 @@ margin-top:-40%
     font-size: 75px;
     white-space: pre-wrap;
     padding-top:10%;
-    width:90%
+    width:90%;
+    margin-top:20px;
 }
 }
 
@@ -381,7 +379,8 @@ margin-top:-40%
     font-size: 75px;
     white-space: pre-wrap;
     padding-top:10%;
-    width:90%
+    width:90%;
+    margin-top:15px;
 }
 }
 

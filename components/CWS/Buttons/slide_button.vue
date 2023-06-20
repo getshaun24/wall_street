@@ -2,7 +2,7 @@
     
     <WALLSTREETEmailModal ref="open_it"/>
 
-    <button @click="open_popup_modal()" ref="target" class="slide_button" :class="{ slide_anim: disabled }" >
+    <button @click="open_popup_modal()" ref="target" class="slide_button cursor_hover" :class="{ slide_anim: disabled }" >
         <div :class="{ arrow_anim: disabled }" class="arrow_svg"></div>
         <p :class="{ text_anim: disabled }" class="slide_button_text">{{ button_text }}</p>
     </button>
@@ -61,7 +61,6 @@ function open_popup_modal() {
             padding:0px;
             margin-top:15px;
             opacity:0;
-            cursor:pointer
         }
         .arrow_svg{
             border: 1px solid #000;

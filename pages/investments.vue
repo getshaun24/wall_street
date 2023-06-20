@@ -18,7 +18,7 @@
 
 
 
-<div @click="nav_to('fund_pages/next_ai')" class="investment_container">
+<div @click="nav_to('fund_pages/next_ai')" class="investment_container cursor_hover">
     <div class="video_container_outer" :style="{ 'background-color': colors[0] }">
         <div class="video_container_inner">
             <video class="video_style" autoplay muted loop playsinline>
@@ -35,7 +35,7 @@
 
 
 
-<div @click="nav_to('fund_pages/nano')" class="investment_container">
+<div @click="nav_to('fund_pages/nano')" class="investment_container cursor_hover">
     <div class="video_container_outer" :style="{ 'background-color': colors[0] }">
         <div class="video_container_inner">
             <video class="video_style" autoplay muted loop playsinline>
@@ -51,7 +51,7 @@
 </div>
 
 
-<div  @click="nav_to('fund_pages/eco')" class="investment_container">
+<div  @click="nav_to('fund_pages/eco')" class="investment_container cursor_hover">
     <div class="video_container_outer" :style="{ 'background-color': colors[1] }">
         <div class="video_container_inner">
             <video class="video_style" autoplay muted loop playsinline>
@@ -206,7 +206,7 @@ onMounted(() => {
   gsap.utils.toArray('.investment_container').forEach(container => {
     gsap.from(container, {
       autoAlpha: .25, // This handles both 'opacity' and 'visibility'
-      y: 100, // This will move the container up 50px (adjust as necessary)
+      y: 100, 
       scrollTrigger: {
         trigger: container,
         start: "top 90%", // When the top of the element hits the bottom of the viewport
@@ -269,9 +269,7 @@ function nav_to(page_link){
     padding-top:10%;
     padding-bottom: 20%;
 }
-.investment_container{
-    cursor: pointer;
-}
+
 
 .video_container_outer {
     display: flex;
@@ -457,7 +455,8 @@ function nav_to(page_link){
     width:90%
 }
 .investment_title{
-    font-size:40px
+    font-size:40px;
+    margin-top:20px;
 }
 }
 
@@ -475,7 +474,8 @@ function nav_to(page_link){
     width:90%
 }
 .investment_title{
-    font-size:50px
+    font-size:50px;
+    margin-top:15px;
 }
 }
 

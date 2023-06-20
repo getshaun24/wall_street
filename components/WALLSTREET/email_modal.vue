@@ -6,7 +6,7 @@
         <MainTransition ref="main_tansition"/>
     <div class="modal_container" :class="{modal_hide_anim: modal_exit_anim, modal_hide_disp: modal_exit_display}">
             <div class="modal_popup" :class="{modal_bix_hide_anim: modal_exit_anim}" ref="modal">
-                <div @click="modal_leave" class="modal_exit">
+                <div @click="modal_leave" class="modal_exit cursor_hover">
                 <div class="horizontal_line"></div>
                 <div class="vertical_line"></div>
             </div>
@@ -33,7 +33,7 @@
                 <label class="label_white label_edit" >Email</label>
               </div>
     
-              <div @click="submit_form" class="modal_submit_button">Submit</div>
+              <div @click="submit_form" class="modal_submit_button cursor_hover">Submit</div>
     
             </div>
 
@@ -293,7 +293,6 @@ margin-top:-50px
             margin-top:3.5%;
             border-radius:100px;
             border:#fff solid 0px;
-            cursor:pointer;
             font-size:12px;
             color:#fff;
               box-shadow: 0px 7px 10px rgb(25, 120, 237, .3);
@@ -316,7 +315,6 @@ margin-top:-50px
             margin-bottom:20%;
             border-radius:100px;
             border:#fff solid 0px;
-            cursor:pointer;
             font-size:12px;
             color:#fff;
               box-shadow: 0px 7px 10px rgb(25, 120, 237, .3);
@@ -339,7 +337,6 @@ margin-top:-50px
         margin-top:25%;
         border-radius:100px;
         border:#fff solid 0px;
-        cursor:pointer;
         font-size:16px;
         line-height:40px;
         color:#fff;
@@ -367,14 +364,12 @@ margin-top:-50px
             top:-60px;
             left:20px;
             margin-bottom:-7%;
-            cursor: pointer;
         }
         
         
         .modal_exit{
             margin-top:0px;
             margin-left:93%;
-            cursor:pointer;
             z-index: 10;
             position: relative;
             width:50px;

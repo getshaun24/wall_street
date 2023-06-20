@@ -14,7 +14,7 @@
             ref="videoRef" 
             muted 
             playsinline
-            class="logo_vid"
+            class="logo_vid cursor_hover"
             @mouseenter="playVideo"
             @click="transition_and_route('/')"
         >
@@ -23,7 +23,7 @@
 
                   <div class="footer_elm_left" style="padding-top:3px">
                     <div class="flex_box">
-                      <span class="footer_subheading bottom_button" @click="transition_and_route('/privacy')">Privacy Policy</span>
+                      <span class="footer_subheading bottom_button cursor_hover" @click="transition_and_route('/privacy')">Privacy Policy</span>
                     <span class="footer_subheading">Copyright © The Wallstreet Network 2021</span>
                   </div>
                   </div>
@@ -86,7 +86,6 @@ footer{
 
 
 .bottom_button{
-  cursor:pointer;
   margin-right:100%;
   text-decoration: underline !important;
   text-decoration-color: green !important;
@@ -188,7 +187,6 @@ height: 36px;
 border-radius: 50%;
 border: 1px solid var(--footer_subheading);
 overflow: hidden;
-cursor: pointer;
 position: absolute;
 margin-right:-35px;
 margin-top:-50px
@@ -204,7 +202,6 @@ margin-top:-50px
     width:400px;
     margin-top:40px;
     margin-left:-20px;
-    cursor:pointer;
     filter: contrast(1.05);
     
 }

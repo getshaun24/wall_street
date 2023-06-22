@@ -17,7 +17,7 @@
             <img class="profile_img" src="~/assets/content/wallstreet/services/services_2.jpg" alt="">
             </div>
             <div class="big_block_grid_inner">
-                <h6 class="big_block_text">Manage And Organize All Your Deals And Investments</h6>
+                <h6 class="big_block_text">Keep Track of Your Deals</h6>
                 <h6 class="big_block_text">Instant Payments On Chosen Deals</h6>
                 <h6 class="big_block_text">Full Transparency For Your Funds</h6>
                 

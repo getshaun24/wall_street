@@ -2,10 +2,9 @@
     <div>  
       <div class="wrap">
         <div class="wrap-container">
-          <div class="scrollElements" ref="scrollElements1">
-            The Wall Street Network focuses on early and mid-stage companies that are undervalued and/or yet to be discovered. Our tech forward approach allows us to offer innovative financing and partnering solutions across a wide array of sectors.
+          <div class="scrollElements" ref="scrollElements1">Immerse yourself in the pulse of private equity with the Wall Street Network (WSN). Like a digital sommelier, WSN handpicks data from the PE landscape, pouring out a rich blend of market trends, green-tech innovators, and top-shelf deals. Sip on insights that empower your decisions.
 
-            <span class="overlayText">The Wall Street Network focuses on early and mid-stage companies that are undervalued and/or yet to be discovered. Our tech forward approach allows us to offer innovative financing and partnering solutions across a wide array of sectors.
+            <span class="overlayText">Immerse yourself in the pulse of private equity with the Wall Street Network (WSN). Like a digital sommelier, WSN handpicks data from the PE landscape, pouring out a rich blend of market trends, green-tech innovators, and top-shelf deals. Sip on insights that empower your decisions.
 </span>
           </div>
         </div>

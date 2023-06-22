@@ -133,7 +133,7 @@
       })
       .then((response) => response.json())
       .then((data) => {
-           alert(data.message)
+
            if (data.status != 'success_email_added'){
             alert(data.message)
            } 

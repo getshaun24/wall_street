@@ -146,9 +146,9 @@
 }
 
 .card_img_main{
-    width:350px;
-    height: 350px;
-    margin-top:75px
+    width:250px;
+    height: 250px;
+    margin-top:25px
 }
 
 .card_title{

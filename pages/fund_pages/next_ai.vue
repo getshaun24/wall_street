@@ -1,5 +1,6 @@
 <template>
 
+<WALLSTREETDownloadModal ref="open_it"/>
 
     <CWSMainHeader/>
         <CWSGSAPScrollSmoother>
@@ -131,6 +132,8 @@
         <div class="end_trigger"></div>
         <div class="cardPaperOverlay"></div>
         <img class="card_img_main" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_ai.png">
+        <h6 class="card_title">Free Fund Overview</h6>
+        <div class="free_button cursor_hover" @click="open_popup_modal()">Access</div>
     </div>
 
 
@@ -371,30 +374,22 @@ gsap.from('.sector_container_1', {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      const sign_up_props = {
+  button_text: 'Access',
+  background_color: '#fafdff',
+  color: '#000',
+  link_to:'signup'
+}
 
 })
 })
+
+
+const open_it = ref(null);
+function open_popup_modal() {
+  open_it.value.open_modal();
+}
+
 
 
 
@@ -953,9 +948,31 @@ margin-bottom:40px
 }
 
 .card_img_main{
-    width:350px;
-    height: 350px;
-    margin-top:75px
+    width:200px;
+    height: 200px;
+    margin-top:25px
+}
+
+.free_button{
+    background-color: #35a035;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(53, 160, 53, 0);
+    outline: none;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.free_button:hover{
+    background-color: #ffffff;
+    border: 1px solid #35a035;
+    color:#35a035;
 }
 
 .card_title{

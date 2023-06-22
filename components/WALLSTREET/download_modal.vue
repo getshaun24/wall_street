@@ -15,29 +15,34 @@
             <div class="modal_grid">
 
                 <div style="overflow:hidden">
-               <img class="modal_img" :style="{ transform: `scale(${img_scale})` }" src="~/assets/content/wallstreet/modal_img.jpg">
+               <img class="modal_img" :style="{ transform: `scale(${img_scale})` }" src="~/assets/content/wallstreet/download_img.jpg">
             </div>
     
             <div class="modal_info">
-                <h6 class="modal_text">Get Started</h6>
+                <h6 class="modal_text">Get Access</h6>
     
     
                     <br>
-                <div class="input_wrap">
+                <div class="input_wrap cursor_hover">
                 <input v-model="subscribe_name" type="text" class="input_white input_edit" placeholder=' ' required/>
                 <label class="label_white label_edit" >Name</label>
               </div>
 
-              <div class="input_wrap">
+              <div class="input_wrap cursor_hover">
                 <input v-model="subscribe_email" type="text" class="input_white input_edit" placeholder=' ' required/>
                 <label class="label_white label_edit" >Email</label>
               </div>
     
-              <div @click="submit_form" class="modal_submit_button cursor_hover">Submit</div>
+              <div @click="submit_form_1" class="modal_submit_button cursor_hover">Download</div>
     
             </div>
 
         </div>
+
+        <div class="modal_info_2" v-if="download_clicked">
+            <h6 class="info_2_title">Your Download will start in <span class="count_down_timer">{{ count }}</span> seconds <br><br>You will also be re-directed to the GET Resources Group's Fund Offering Pages</h6>
+
+            </div>
     
 
     
@@ -54,7 +59,7 @@
     
     <script setup>
     
-    
+    import { gsap } from 'gsap'
     
     const config = useRuntimeConfig()
     const csrf_cookie = useCookie('csrf_access_token')
@@ -67,6 +72,7 @@
 
     const img_scale = ref(2)
     
+    const download_clicked = ref(false)
         
         
         // sleep time expects milliseconds
@@ -83,6 +89,10 @@
     }
     
     function modal_leave(){
+        gsap.to('.modal_grid', 1, {
+                xPercent: 0,
+            });
+            download_clicked.value = false
             modal_exit_anim.value = true
             sleep(1100).then(() => {
                 img_scale.value = 2
@@ -137,12 +147,55 @@
     }
     
     
+
+    function submit_form_1(){
+        timer()
+        download_clicked.value = true
+        gsap.to('.modal_grid', 1, {
+    xPercent: -100,
+  });
+  sleep(100).then(() => {
+  gsap.to('.modal_info_2', .5, {
+    opacity: 1,
+    delay: 1
+  });
+});
+    }
     
     
-    
-    
-    
-    
+  ``
+
+    const count = ref(10);
+
+function timer() {
+           // Redirect to a new page with a slight delay
+           sleep(13000).then(() => {
+        window.open("https://thisisget.com/fund_pages/fund_landing_pages/next_ai_landing", '_blank').focus();
+    });
+
+  const intervalId = setInterval(() => {
+    count.value -= 1;
+    if (count.value <= 0) {
+      clearInterval(intervalId); // Stop the timer
+
+      // Download PDF
+      downloadPdf('https://thewallstreetnetwork.com/decks/Next_AI_Fund_Deck.pdf');
+
+
+    }
+  }, 1000); // decrement the count every second
+}
+
+function downloadPdf(fileUrl) {
+  const link = document.createElement('a');
+  link.href = fileUrl;
+  link.target = '_blank';
+  link.download = 'file.pdf';
+  link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+}
+
+
+
     </script>
     
     
@@ -192,6 +245,22 @@ margin-top:-50px
         transition: all 1s ease-in-out .25s;
     }
     
+    .modal_info_2{
+        opacity:.5;
+        position:absolute;
+        top:25%;
+        width:60%;
+        margin-left:0%
+    }
+
+    .info_2_title{
+        font-size:30px;
+        text-align: center;
+    }
+
+    .count_down_timer{
+        color:rgba(0, 149, 255, 1)
+    }
     
     
     .plaid_blur{
@@ -342,6 +411,7 @@ margin-top:-50px
         outline: 0px solid rgba(19, 218, 218, 0.6);
         transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
         text-align: center;
+        cursor:none
     }
     
     

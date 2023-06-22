@@ -61,6 +61,7 @@ function open_popup_modal() {
             padding:0px;
             margin-top:15px;
             opacity:0;
+            cursor:none;
         }
         .arrow_svg{
             border: 1px solid #000;

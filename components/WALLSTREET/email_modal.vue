@@ -109,7 +109,7 @@
     if(!re.test(String(subscribe_email.value).toLowerCase())) {
         alert('Email is not valid!');
     } else {
-
+        
     
     
     fetch(`${config.flask_url}/api/WALLSTREET_conatcat_and_sub/`, {

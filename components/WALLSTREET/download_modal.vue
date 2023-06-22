@@ -123,7 +123,8 @@
     
     
     fetch(`${config.flask_url}/api/WALLSTREET_conatcat_and_sub/`, {
-        method: 'POST',
+      method: 'POST',
+        mode: 'cors',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -133,8 +134,8 @@
       .then((response) => response.json())
       .then((data) => {
            alert(data.message)
-           if (data.status == 'success_email_added'){
-            modal_leave()
+           if (data.status != 'success_email_added'){
+            alert(data.message)
            } 
     
       })
@@ -149,6 +150,7 @@
     
 
     function submit_form_1(){
+      submit_form()
         timer()
         download_clicked.value = true
         gsap.to('.modal_grid', 1, {

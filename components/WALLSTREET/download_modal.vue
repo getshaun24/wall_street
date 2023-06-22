@@ -152,7 +152,6 @@
     
 
     function move_form(){
-      submit_form()
         timer()
         download_clicked.value = true
         gsap.to('.modal_grid', 1, {

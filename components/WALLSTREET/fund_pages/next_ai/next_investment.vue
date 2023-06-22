@@ -37,9 +37,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const randomHue = () => Math.floor(Math.random() * 360);
+// ------------- All Colors ------------
+// const randomHue = () => Math.floor(Math.random() * 360);
+// const randomSaturation = () => Math.floor(Math.random() * (70 - 30) + 30);
+// const colors = Array.from({ length: 6 }, () => `hsl(${randomHue()}, ${randomSaturation()}%, 50%)`);
+
+// ------------- No Brown Colors ------------
+const randomHue = () => {
+  const ranges = [[51, 159], [201, 359]]; // These ranges avoid brown-like hues
+  const [min, max] = ranges[Math.floor(Math.random() * ranges.length)];
+  return Math.floor(Math.random() * (max - min) + min);
+};
 const randomSaturation = () => Math.floor(Math.random() * (70 - 30) + 30);
 const colors = Array.from({ length: 6 }, () => `hsl(${randomHue()}, ${randomSaturation()}%, 50%)`);
+
+
 
 const videoRef = ref(null);
 const videoRef_1 = ref(null);

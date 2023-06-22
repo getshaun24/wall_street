@@ -114,12 +114,10 @@
     
     fetch(`${config.flask_url}/api/WALLSTREET_conatcat_and_sub/`, {
         method: 'post',
-      mode: 'cors',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      credentials: 'include',
           body: JSON.stringify({subscribe_name:subscribe_name.value, subscribe_email: subscribe_email.value})
       })
       .then((response) => response.json())

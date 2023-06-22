@@ -977,7 +977,7 @@ margin-bottom:40px
 
 .card_title{
     font-size:50px;
-    margin-top:60px;
+    margin-top:30px;
     margin-bottom:30px
 }
 
@@ -986,6 +986,136 @@ margin-bottom:40px
     margin-top:0px;
     width:80%;
     text-align:center
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+    .cards {
+    width:90%;
+    margin-top:7.5%
+  }
+
+  .card_img{
+    width:80px;
+    height: 80px;
+    margin-top:10px
+}
+.card_title{
+    font-size:40px;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.card_text{
+    font-size:11px;
+    margin-top:0px;
+    width:80%;
+    text-align:center
+}
+
+}
+
+@media only screen and (min-width: 410px) and (max-width: 576px) {
+    .cards {
+    width:80%;
+    margin-top:7.5%
+  }
+
+  .card_img{
+    width:80px;
+    height: 80px;
+    margin-top:10px
+}
+.card_title{
+    font-size:40px;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.card_text{
+    font-size:12px;
+    margin-top:0px;
+    width:80%;
+    text-align:center
+}
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .cards {
+    width:80%;
+    margin-top:7.5%
+  }
+
+  .card_img{
+    width:100px;
+    height: 100px;
+    margin-top:25px
+}
+.card_title{
+    font-size:40px;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.card_text{
+    font-size:13px;
+    margin-top:0px;
+    width:80%;
+    text-align:center
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .cards {
+    width:80%;
+    margin-top:7.5%
+  }
+
+  .card_img{
+    width:120px;
+    height: 120px;
+    margin-top:45px
+}
+.card_title{
+    font-size:50px;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.card_text{
+    font-size:12px;
+    margin-top:0px;
+    width:80%;
+    text-align:center
+}
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .card_img{
+    width:100px;
+    height: 100px;
+    margin-top:35px
+}
+.card_title{
+    font-size:50px;
+    margin-top:15px;
+    margin-bottom:20px;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 5600px) {
 }
 
     </style>

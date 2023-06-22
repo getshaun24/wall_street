@@ -114,6 +114,7 @@
     
     fetch(`${config.flask_url}/api/WALLSTREET_conatcat_and_sub/`, {
         method: 'POST',
+        mode: 'cors',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'

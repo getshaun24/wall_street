@@ -181,7 +181,7 @@ function timer() {
       // Download PDF
       downloadPdf('https://thewallstreetnetwork.com/decks/Next_AI_Fund_Deck.pdf');
 
-
+      modal_leave()
     }
   }, 1000); // decrement the count every second
 }

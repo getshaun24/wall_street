@@ -33,7 +33,7 @@
                 <label class="label_white label_edit" >Email</label>
               </div>
     
-              <div @click="submit_form_1" class="modal_submit_button cursor_hover">Download</div>
+              <div @click="submit_form" class="modal_submit_button cursor_hover">Download</div>
     
             </div>
 
@@ -133,10 +133,12 @@
       })
       .then((response) => response.json())
       .then((data) => {
-           alert(data.message)
+
            if (data.status != 'success_email_added'){
             alert(data.message)
-           } 
+           } else {
+            move_form() 
+           }
     
       })
       .catch(error => {
@@ -149,7 +151,7 @@
     
     
 
-    function submit_form_1(){
+    function move_form(){
       submit_form()
         timer()
         download_clicked.value = true

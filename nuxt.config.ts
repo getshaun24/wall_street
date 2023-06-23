@@ -7,9 +7,11 @@ export default defineNuxtConfig({
       meta: [
         // <meta name="viewport" content="width=device-width, initial-scale=1">
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        
       ],
       script: [
         // {src: "https://cdn.plaid.com/link/v2/stable/link-initialize.js", body: true, async: true}
+        
       ],
       link: [
         // <link rel="stylesheet" href="https://myawesome-lib.css">

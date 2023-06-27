@@ -10,7 +10,11 @@
 
 
 
+        <div class="top_container">
         <h3 class="fund_title">Eco Energy Partners</h3>
+        <a class="top_cta cursor_hover" href="https://thisisget.com/fund_pages/eco">Learn More</a>
+    </div>
+
 
        <img src="~/assets/content/wallstreet/fund_pages/eco/eco_1.png" class="landing_image"/>
 
@@ -472,6 +476,38 @@ const link_to_url = "https://thisisget.com/fund_pages/eco"
 .sector_margin{
     margin-left:60%;
     margin-top: 45px;
+}
+
+.top_cta{
+    color:#fff;
+    font-size: 2vw;
+    margin-top:-5%;
+    margin-bottom: 85px;
+    padding:10px 60px;
+    border-radius: 50px;
+    background-color: green;
+    box-shadow: 0px 5px 12px rgba(0, 128, 0, 0.2);
+    outline: 0px solid rgba(19, 218, 218, 0.6);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-align: center;
+    cursor:none;
+    border:#fff solid 0px;
+
+}
+    
+    .top_cta:hover{
+      box-shadow: 0px 10px 15px rgba(0, 128, 0, 0.501);
+      transform: translateY(-3px);
+      outline: 3px solid rgba(19, 218, 218, 0.6);
+      transition: outline 12s ease 1s;
+    } 
+    
+
+.top_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 

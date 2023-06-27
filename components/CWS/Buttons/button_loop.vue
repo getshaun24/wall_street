@@ -15,15 +15,16 @@
     
     .arrow_button{
         padding:5px;
-        border-bottom: 2px solid #2196f3;
+        border-bottom: 5px solid #2196f3;
         width:140px;
         margin-left:5%;
-        margin-top:50px;
+        margin-top:60px;
         transition: all ease 5s;
         transition: color .2s ease;
         position: relative;
       color:#fff;
       cursor: none;
+      font-size:25px
     }
     
     .arrow{

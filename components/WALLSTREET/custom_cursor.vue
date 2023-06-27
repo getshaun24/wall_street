@@ -179,7 +179,8 @@ function onClick() {
     height: 15,
     left: 0,
     top:0,
-    delay: 0.2
+    delay: 0.2,
+    overwrite: true
   })
 
 

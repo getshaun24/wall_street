@@ -64,22 +64,13 @@
 
     </div>
 
-    <div class="center_img_container_outer">
-    <div class="center_img_container_inner">
-    <img class="center_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_6.jpg">
-</div>
-</div>
 
 
-<div class="section_3_container">
-<p class="section_3_title">Manager’s note and Investment Thesis</p>
-<h5 class="section_3_text">A multi-layered approach to capitalize on every layer of the tech stack</h5>
-<p class="section_3_info_text">We GET it. OpenAI and Anthropic are red hot right now and, sure, that is part of the idea here yet we like to look at other angles. Whether it is one of them, Bard, Meta, or a company that hasn’t yet made the headlines, every player at that part of the stack relies on the companies above and below it… GET Resources takes a holistic view of the sector and seeks to get involved at all levels to maximize our successes and the returns for our investors. After all, if this is the AI “gold rush”, we want a fund that invests in the proverbial pickaxe, helmets, and blue jeans makers that are still around today, not just the gold miners themselves. 
-<br><br>
-…and before you ask, this was not written by ChatGPT :)
 
-</p>
-</div>
+
+
+
+
 
 
     <!-- <WALLSTREETFundPagesNextAiStackingCards/> -->
@@ -133,7 +124,7 @@
         <div class="end_trigger"></div>
         <div class="cardPaperOverlay"></div>
         <img class="card_img_main" src="~/assets/content/wallstreet/fund_pages/next_ai/next_logos/next_ai.png">
-        <h6 class="card_title">Free Fund Overview</h6>
+        <h6 class="card_title">Free Fund Press Release</h6>
         <div class="free_button cursor_hover" @click="open_popup_modal()">Access</div>
     </div>
 
@@ -173,7 +164,24 @@
 
 
 
+<div class="section_3_container">
+<p class="section_3_title">Manager’s note and Investment Thesis</p>
+<h5 class="section_3_text">A multi-layered approach to capitalize on every layer of the tech stack</h5>
+<p class="section_3_info_text">We GET it. OpenAI and Anthropic are red hot right now and, sure, that is part of the idea here yet we like to look at other angles. Whether it is one of them, Bard, Meta, or a company that hasn’t yet made the headlines, every player at that part of the stack relies on the companies above and below it… GET Resources takes a holistic view of the sector and seeks to get involved at all levels to maximize our successes and the returns for our investors. After all, if this is the AI “gold rush”, we want a fund that invests in the proverbial pickaxe, helmets, and blue jeans makers that are still around today, not just the gold miners themselves. 
+<br><br>
+…and before you ask, this was not written by ChatGPT :)
 
+</p>
+</div>
+
+
+
+
+<div class="center_img_container_outer">
+    <div class="center_img_container_inner">
+    <img class="center_img" src="~/assets/content/wallstreet/fund_pages/next_ai/next_6.jpg">
+</div>
+</div>
 
 
 
@@ -436,7 +444,7 @@ const link_to_url = "https://thisisget.com/fund_pages/next_ai/"
   gap: 10px;
   width:95%;
   margin-left:5%;
-  margin-top:2%
+  margin-top:2%;
 }
 
 .left_info{
@@ -487,7 +495,7 @@ const link_to_url = "https://thisisget.com/fund_pages/next_ai/"
 .section_3_container{
     width:80%;
     margin-left:10%;
-    margin-top:5%
+    margin-top:-30%
 }
 .section_3_title{
     color:#fff;
@@ -514,6 +522,7 @@ const link_to_url = "https://thisisget.com/fund_pages/next_ai/"
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:15%
 }
 
 .three_grid{
@@ -638,7 +647,7 @@ const link_to_url = "https://thisisget.com/fund_pages/next_ai/"
 }
 
 .center_img_container_outer{
-    margin-top:10%
+    margin-top:20%
 }
 
 .sector_grid{
@@ -730,10 +739,20 @@ const link_to_url = "https://thisisget.com/fund_pages/next_ai/"
     }
 
 
+    .slab_container{
+    margin-bottom: -50%;
+}
+
+
 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+
+
+    .center_img_container_outer{
+    margin-top:20%
+}
 
     .grid_container {
   display: grid;

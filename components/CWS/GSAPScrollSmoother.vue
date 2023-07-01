@@ -59,12 +59,13 @@ onMounted(() => {
     if (useSmoothScroll) {
       smoothy.value = ScrollSmoother.create({
         smooth: 0, // Adjust the smoothness for Safari
-        effects: true,
+        effects: false,
         autoStart: false,
         scrollDuration: 0,
         scrollSpeed: 0,
         scrollEasing: "linear",
         smoothTouch: 0,
+        normalizeScroll: true,
         normalizeScroll: {
           allowNestedScroll: true,
         },
@@ -74,6 +75,7 @@ onMounted(() => {
       smoothy.value = ScrollSmoother.create({
         smooth: 2.5,
         effects: true,
+        normalizeScroll: true,
         normalizeScroll: {
           allowNestedScroll: true,
         },

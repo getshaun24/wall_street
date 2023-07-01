@@ -33,50 +33,54 @@ onUpdated(() => {
 })
 
 function init() {
-  setTimeout(() => {
-    cursorBig = document.getElementById('cursor_big')
-    cursorSmall = document.getElementById('cursor_small')
-    withHover = [...document.getElementsByTagName('a'), ...document.getElementsByClassName(hoverClass)]
-    withHoverClosed = [...document.getElementsByClassName(hoverClosedClass)];
+  // Check window size before initializing cursor
+  if (window.innerWidth > 768) {
+    setTimeout(() => {
+      cursorBig = document.getElementById('cursor_big')
+      cursorSmall = document.getElementById('cursor_small')
+      withHover = [...document.getElementsByTagName('a'), ...document.getElementsByClassName(hoverClass)]
+      withHoverClosed = [...document.getElementsByClassName(hoverClosedClass)];
 
+      withHover.forEach((element) => {
+        element.addEventListener('mouseover', onMouseHover)
+        element.addEventListener('mouseout', onMouseHoverOut)
+      })
+
+      withHoverClosed.forEach((element) => {
+        element.addEventListener('mouseover', onMouseHoverClosed);
+        element.addEventListener('mouseout', onMouseHoverOutClosed);
+      });
+
+      document.addEventListener('mousemove', onMouseMove)
+      document.addEventListener('mousedown', onMouseHover)
+      document.addEventListener('mouseup', onMouseHoverOut)
+      document.addEventListener('mouseenter', onMouseEnter)
+      document.addEventListener('mouseleave', onMouseLeave)
+      document.addEventListener('click', onClick)
+    }, 100)
+  }
+}
+
+function destroy() {
+  // Check window size before removing event listeners
+  if (window.innerWidth > 768) {
     withHover.forEach((element) => {
-      element.addEventListener('mouseover', onMouseHover)
-      element.addEventListener('mouseout', onMouseHoverOut)
+      element.removeEventListener('mouseover', onMouseHover)
+      element.removeEventListener('mouseout', onMouseHoverOut)
     })
 
     withHoverClosed.forEach((element) => {
-      element.addEventListener('mouseover', onMouseHoverClosed);
-      element.addEventListener('mouseout', onMouseHoverOutClosed);
+      element.removeEventListener('mouseover', onMouseHoverClosed);
+      element.removeEventListener('mouseout', onMouseHoverOutClosed);
     });
 
-    document.addEventListener('mousemove', onMouseMove)
-    document.addEventListener('mousedown', onMouseHover)
-    document.addEventListener('mouseup', onMouseHoverOut)
-    document.addEventListener('mouseenter', onMouseEnter)
-    document.addEventListener('mouseleave', onMouseLeave)
-    document.addEventListener('click', onClick)
-  }, 100)
+    document.removeEventListener('mousemove', onMouseMove)
+    document.removeEventListener('mousedown', onMouseHover)
+    document.removeEventListener('mouseup', onMouseHoverOut)
+    document.removeEventListener('mouseenter', onMouseEnter)
+    document.removeEventListener('mouseleave', onMouseLeave)
+  }
 }
-
-
-function destroy() {
-  withHover.forEach((element) => {
-    element.removeEventListener('mouseover', onMouseHover)
-    element.removeEventListener('mouseout', onMouseHoverOut)
-  })
-  
-  withHoverClosed.forEach((element) => {
-    element.removeEventListener('mouseover', onMouseHoverClosed);
-    element.removeEventListener('mouseout', onMouseHoverOutClosed);
-  });
-
-  document.removeEventListener('mousemove', onMouseMove)
-  document.removeEventListener('mousedown', onMouseHover)
-  document.removeEventListener('mouseup', onMouseHoverOut)
-  document.removeEventListener('mouseenter', onMouseEnter)
-  document.removeEventListener('mouseleave', onMouseLeave)
-}
-
 
 
 let moveTimeout;
@@ -250,44 +254,46 @@ const cursorImageUrl = computed(() => {
 
 </script>
 
-  <style scoped>
-    
+<style scoped>
 .custom_cursor{
   z-index: 1000000000000 !important;
 }
 
-    .custom_cursor_ball {
-            position: fixed;
-            top: 0;
-            left: 0;
-            opacity: 1;
-            pointer-events: none;
-            transition: opacity 0.2s ease;
-            /* backdrop-filter: blur(2px); */
-            z-index:1000 !important;
-          }
+.custom_cursor_ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index:1000 !important;
+}
 
-          .custom_cursor_ball_big {
-            background-image: url('');
-             background-size: contain;
-            background-repeat: no-repeat;
-            width: 15px;
-            height: 15px;
-            /* border: 1px solid #006aff65; */
-            /* background-color: #ffffff7c; */
-            /* border-radius: 50%; */
-            z-index:1000 !important;
-          }
+.custom_cursor_ball_big {
+  background-image: url('');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  z-index:1000 !important;
+}
 
-          .custom_cursor_ball_small {
-            content: "";
-            width: 10px;
-            height: 10px;
-            background: green;
-            border: 3px solid #ffffff00;
-            border-radius: 50%;
-            opacity: 1;
-            backdrop-filter: blur(2px);
-            z-index:2000000000000000 !important;
-          }
-  </style>
+.custom_cursor_ball_small {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: green;
+  border: 3px solid #ffffff00;
+  border-radius: 50%;
+  opacity: 1;
+  backdrop-filter: blur(2px);
+  z-index:2000000000000000 !important;
+}
+
+/* Media query to hide cursor on mobile */
+@media only screen and (max-width: 768px) {
+  .custom_cursor_ball {
+    display: none;
+  }
+}
+</style>

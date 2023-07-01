@@ -166,15 +166,23 @@
     }
     
     
-  ``
+  
 
     const count = ref(10);
 
 function timer() {
+
            // Redirect to a new page with a slight delay
-           sleep(13000).then(() => {
-        window.open("https://thisisget.com/fund_pages/fund_landing_pages/next_ai_landing", '_blank').focus();
-    });
+           setTimeout(() => {
+    const newWindow = window.open("https://thisisget.com/fund_pages/fund_landing_pages/next_ai_landing", '_blank');
+    if (newWindow) {
+        newWindow.focus();
+    } else {
+        window.location.href = "https://thisisget.com/fund_pages/fund_landing_pages/next_ai_landing";
+    }
+}, 13000);
+
+
 
   const intervalId = setInterval(() => {
     count.value -= 1;
@@ -184,6 +192,7 @@ function timer() {
       // Download PDF
       downloadPdf('https://thewallstreetnetwork.com/decks/Next_AI_Fund_Deck.pdf');
 
+      
       modal_leave()
     }
   }, 1000); // decrement the count every second
@@ -191,10 +200,12 @@ function timer() {
 
 function downloadPdf(fileUrl) {
   const link = document.createElement('a');
-  link.href = fileUrl;
-  link.target = '_blank';
-  link.download = 'file.pdf';
-  link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+    link.href = fileUrl;
+    link.target = '_blank';
+    link.download = 'file.pdf';
+    document.body.appendChild(link); // Append the link to the document
+    link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+    document.body.removeChild(link); // Optionally remove the link from the document
 }
 
 

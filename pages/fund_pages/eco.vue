@@ -44,7 +44,7 @@
             <p class="left_text">80-100% writeoff or 20-30% back on principal</p>
             <br>
             <div class="is_mobile">
-            <p class="get_info is_mobile">The Eco Energy Partners Fund is offered through GET Resources Group, currently our #1 PE firm for 2023. Learn more about GET here.
+            <p class="get_info is_mobile">The Eco Energy Partners Fund is offered through GET Equity Partners, currently our #1 PE firm for 2023. Learn more about GET here.
 </p>
             <CWSButtonsButtonLoop  :link_url="link_to_url" />
     </div>
@@ -55,7 +55,7 @@
         <WALLSTREETFundPagesEcoScrollText/>
 
         <div class="is_not_mobile">
-        <p class="get_info is_not_mobile">The Eco Energy Partners Fund is offered through GET Resources Group, currently our #1 PE firm for 2023. Learn more about GET here.
+        <p class="get_info is_not_mobile">The Eco Energy Partners Fund is offered through GET Equity Partners, currently our #1 PE firm for 2023. Learn more about GET here.
 </p>
         <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
@@ -123,7 +123,7 @@
 
     <div class="sector_container_4">
         <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
-        <p data-speed=".9" class="sector_text_4">GET Resources group is our #1 point of contact for this fund.</p>
+        <p data-speed=".9" class="sector_text_4">GET Equity Partners is our #1 point of contact for this fund.</p>
         <div data-speed=".85">
         <CWSButtonsButtonLoop :link_url="link_to_url" class="sector_margin"/>
         </div>

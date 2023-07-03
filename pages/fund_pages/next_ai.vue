@@ -46,7 +46,7 @@
             <p class="left_text">4-7 X Returns</p>
             <br>
             <div class="is_mobile">
-            <p class="get_info is_mobile">This fund is offered by GET Resources Group. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
+            <p class="get_info is_mobile">This fund is offered by GET Equity Partners. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
             <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
     </div>
@@ -56,7 +56,7 @@
         <WALLSTREETFundPagesNextScrollText/>
 
         <div class="is_not_mobile">
-        <p class="get_info is_not_mobile">This fund is offered GET Resources Group. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
+        <p class="get_info is_not_mobile">This fund is offered GET Equity Partners. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
         <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
 
@@ -167,7 +167,7 @@
 <div class="section_3_container">
 <p class="section_3_title">Manager’s note and Investment Thesis</p>
 <h5 class="section_3_text">A multi-layered approach to capitalize on every layer of the tech stack</h5>
-<p class="section_3_info_text">We GET it. OpenAI and Anthropic are red hot right now and, sure, that is part of the idea here yet we like to look at other angles. Whether it is one of them, Bard, Meta, or a company that hasn’t yet made the headlines, every player at that part of the stack relies on the companies above and below it… GET Resources takes a holistic view of the sector and seeks to get involved at all levels to maximize our successes and the returns for our investors. After all, if this is the AI “gold rush”, we want a fund that invests in the proverbial pickaxe, helmets, and blue jeans makers that are still around today, not just the gold miners themselves. 
+<p class="section_3_info_text">We GET it. OpenAI and Anthropic are red hot right now and, sure, that is part of the idea here yet we like to look at other angles. Whether it is one of them, Bard, Meta, or a company that hasn’t yet made the headlines, every player at that part of the stack relies on the companies above and below it… GET Equity Partners takes a holistic view of the sector and seeks to get involved at all levels to maximize our successes and the returns for our investors. After all, if this is the AI “gold rush”, we want a fund that invests in the proverbial pickaxe, helmets, and blue jeans makers that are still around today, not just the gold miners themselves. 
 <br><br>
 …and before you ask, this was not written by ChatGPT :)
 
@@ -231,7 +231,7 @@
 
     <div class="sector_container_4">
         <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
-        <p data-speed=".9" class="sector_text_4">GET Resources group is our #1 point of contact for this fund.</p>
+        <p data-speed=".9" class="sector_text_4">GET Equity Partners is our #1 point of contact for this fund.</p>
         <div data-speed=".85">
         <CWSButtonsButtonLoop :link_url="link_to_url" class="sector_margin"/>
         </div>

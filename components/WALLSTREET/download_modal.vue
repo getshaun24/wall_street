@@ -40,7 +40,7 @@
         </div>
 
         <div class="modal_info_2" v-if="download_clicked">
-            <h6 class="info_2_title">Your Download will start in <span class="count_down_timer">{{ count }}</span> seconds <br><br>You will also be re-directed to the GET Resources Group's Fund Offering Pages</h6>
+            <h6 class="info_2_title">Your Download will start in <span class="count_down_timer">{{ count }}</span> seconds <br><br>You will also be re-directed to the GET Equity Partner's Fund Offering Pages</h6>
 
             </div>
     

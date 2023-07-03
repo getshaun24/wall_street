@@ -45,7 +45,7 @@
             <p class="left_text">3 Years</p>
             <br>
             <div class="is_mobile">
-            <p class="get_info is_mobile">This fund is offered GET Resources Group. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
+            <p class="get_info is_mobile">This fund is offered GET Equity Partners. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
             <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
     </div>
@@ -55,7 +55,7 @@
         <WALLSTREETFundPagesNanoScrollText/>
 
         <div class="is_not_mobile">
-        <p class="get_info is_not_mobile">This fund is offered GET Resources Group. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
+        <p class="get_info is_not_mobile">This fund is offered GET Equity Partners. GET is highly reputable and innovative P.E. firm. Check them out here.</p>
         <CWSButtonsButtonLoop :link_url="link_to_url"/>
     </div>
 
@@ -115,7 +115,7 @@
 
     <div class="sector_container_4">
         <h6 data-speed=".9" class="sector_subtitle_4">Learn More</h6>
-        <p data-speed=".9" class="sector_text_4">GET Resources group is our #1 point of contact for this fund.</p>
+        <p data-speed=".9" class="sector_text_4">GET Equity Partners is our #1 point of contact for this fund.</p>
         <div data-speed=".85">
         <CWSButtonsButtonLoop :link_url="link_to_url" class="sector_margin"/>
         </div>

@@ -1,7 +1,7 @@
 <template>
 
     <h6 class="more_investments">More Investments</h6>
-    <p class="investment_text">Pioneering a unique investment opportunity, GET Resources is delving into the coveted AI sector. The company leverages its seasoned team's AI expertise to identify lucrative opportunities in this dynamic and disruptive field. Their strategy encompasses all aspects of the AI stack, from hardware and platform to application, ensuring a robust ecosystem. Unlike competitors, GET Resources' industry-wide connections extend beyond well-known names, promising unmatched investment insights.</p>
+    <p class="investment_text">Pioneering a unique investment opportunity, GET Equity Partners is delving into the coveted AI sector. The company leverages its seasoned team's AI expertise to identify lucrative opportunities in this dynamic and disruptive field. Their strategy encompasses all aspects of the AI stack, from hardware and platform to application, ensuring a robust ecosystem. Unlike competitors, GET Equity Partners' industry-wide connections extend beyond well-known names, promising unmatched investment insights.</p>
     
     <div class="all_investments_container">
 

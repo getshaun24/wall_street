@@ -1,42 +1,5 @@
-# Nuxt 3 Minimal Starter
+# Website Created For GET Equity Partners
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+https://wallstreet-app-7vz7h.ondigitalocean.app/
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This was 100% created by me. It uses Nuxt3 and is frontend focused but sends out a few requests to an API that was custom coded in python on another company site to collect user data.
